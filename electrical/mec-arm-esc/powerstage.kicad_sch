@@ -858,20 +858,272 @@
 				)
 			)
 			(symbol "STL110N10F7_0_1"
-				(rectangle
-					(start -3.81 8.89)
-					(end 3.81 -8.89)
+				(polyline
+					(pts
+						(xy -5.08 12.7) (xy -5.08 10.16)
+					)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 10.16) (xy -2.54 12.7) (xy -2.54 7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 4.445) (xy -2.286 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 2.54) (xy -5.08 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 4.826) (xy -1.778 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 3.048) (xy -1.778 2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 1.27) (xy -1.778 0.254)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0.762) (xy 0.762 0.762) (xy 0.762 4.318) (xy -1.778 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 2.54) (xy -0.508 2.921) (xy -0.508 2.159) (xy -1.524 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(circle
-					(center -2.54 7.62)
-					(radius 0.38)
+					(center -0.889 2.54)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 7.62) (xy 2.54 7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 7.62) (xy -5.08 7.62) (xy -5.08 10.16)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 4.318)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 0.762)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54) (xy -1.778 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -5.08) (xy 2.54 -2.54) (xy 0 -2.54) (xy 0 -5.08)
+						(xy 0 -2.54) (xy -2.54 -2.54) (xy -2.54 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.381 2.921) (xy 1.143 2.921)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.921) (xy 0.381 2.286) (xy 1.143 2.286) (xy 0.762 2.921)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 10.16) (xy 2.54 7.62) (xy 2.54 12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 12.7) (xy 5.08 7.62) (xy 2.54 7.62)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -881,7 +1133,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -6.35 -1.27 0)
+					(at -2.54 -7.62 90)
 					(length 2.54)
 					(name "S"
 						(effects
@@ -899,7 +1151,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -6.35 -3.81 0)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "S"
 						(effects
@@ -917,7 +1169,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -6.35 -6.35 0)
+					(at 2.54 -7.62 90)
 					(length 2.54)
 					(name "S"
 						(effects
@@ -935,7 +1187,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -6.35 6.35 0)
+					(at -7.62 2.54 0)
 					(length 2.54)
 					(name "G"
 						(effects
@@ -953,25 +1205,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 6.35 5.08 180)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 6.35 2.54 180)
+					(at -2.54 13.97 270)
 					(length 2.54)
 					(name "D"
 						(effects
@@ -989,7 +1223,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 6.35 0 180)
+					(at 0 13.97 270)
 					(length 2.54)
 					(name "D"
 						(effects
@@ -1007,7 +1241,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 6.35 -2.54 180)
+					(at 2.54 13.97 270)
 					(length 2.54)
 					(name "D"
 						(effects
@@ -1025,7 +1259,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 6.35 -5.08 180)
+					(at 5.08 13.97 270)
 					(length 2.54)
 					(name "D"
 						(effects
@@ -1035,6 +1269,26 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STL110N10F7_1_1"
+				(pin unspecified line
+					(at -5.08 13.97 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1301,10 +1555,10 @@
 		)
 	)
 	(junction
-		(at 135.89 34.29)
+		(at 187.96 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "16fd8b9b-d6ea-4f14-b77e-80d547a4c3b1")
+		(uuid "36ce613e-01cf-4099-b4a9-5f8f490b74ee")
 	)
 	(junction
 		(at 123.19 45.72)
@@ -1325,10 +1579,10 @@
 		(uuid "8c303b75-2227-4eef-b371-5ee37ec92884")
 	)
 	(junction
-		(at 187.96 34.29)
+		(at 135.89 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "95a7ad76-6fb2-47d5-af68-304165fdea9e")
+		(uuid "ad9cf204-0c16-4c97-82a0-10d2f393da72")
 	)
 	(wire
 		(pts
@@ -1342,7 +1596,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 34.29) (xy 135.89 48.26)
+			(xy 135.89 33.02) (xy 135.89 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1352,23 +1606,13 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 34.29) (xy 191.77 34.29)
+			(xy 187.96 33.02) (xy 191.77 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2a2d682a-fccd-4bd0-9206-9a1eacac790e")
-	)
-	(wire
-		(pts
-			(xy 187.96 34.29) (xy 187.96 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ab417ed-6ffb-40b1-a970-cdd7dfc4e18f")
 	)
 	(wire
 		(pts
@@ -1402,7 +1646,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 34.29) (xy 162.56 34.29)
+			(xy 135.89 33.02) (xy 162.56 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1422,7 +1666,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 34.29) (xy 187.96 34.29)
+			(xy 170.18 33.02) (xy 187.96 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1462,7 +1706,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 27.94) (xy 135.89 34.29)
+			(xy 135.89 27.94) (xy 135.89 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1489,6 +1733,16 @@
 			(type default)
 		)
 		(uuid "88cb060a-cb06-4834-9513-48e3ee439be9")
+	)
+	(wire
+		(pts
+			(xy 187.96 33.02) (xy 187.96 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b85f27c-e4f2-4486-8d17-5431c2f6701e")
 	)
 	(wire
 		(pts
@@ -1532,7 +1786,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 195.58 34.29 90)
+		(at 195.58 33.02 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1543,7 +1797,7 @@
 		(fields_autoplaced yes)
 		(uuid "0aeb92b8-800f-414e-898d-556b4ba50f5f")
 		(property "Reference" "C4"
-			(at 195.58 26.67 90)
+			(at 195.58 25.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1553,7 +1807,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 195.58 29.21 90)
+			(at 195.58 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1563,7 +1817,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 33.3248 0)
+			(at 199.39 32.0548 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1574,7 +1828,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 34.29 0)
+			(at 195.58 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1585,7 +1839,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 195.58 34.29 0)
+			(at 195.58 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2198,7 +2452,7 @@
 	)
 	(symbol
 		(lib_id "core:STL110N10F7")
-		(at 245.11 36.83 0)
+		(at 243.84 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2206,30 +2460,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "81973887-b28d-438d-aa39-0c5b69d87c89")
 		(property "Reference" "Q1"
-			(at 245.11 23.495 0)
+			(at 251.714 40.132 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
 		(property "Value" "STL110N10F7"
-			(at 245.11 26.035 0)
+			(at 247.396 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EasyEDA:DFN-8_L5.8-W4.9-P1.27-LS6.0-BL-1"
-			(at 245.11 50.8 0)
+			(at 243.84 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2240,7 +2495,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C672185.pdf"
-			(at 245.11 53.34 0)
+			(at 243.84 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2251,7 +2506,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 245.11 36.83 0)
+			(at 243.84 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2262,7 +2517,7 @@
 			)
 		)
 		(property "Manufacturer" "ST(意法半导体)"
-			(at 245.11 55.88 0)
+			(at 243.84 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2273,7 +2528,7 @@
 			)
 		)
 		(property "MPN" "STL110N10F7"
-			(at 245.11 58.42 0)
+			(at 243.84 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2284,7 +2539,7 @@
 			)
 		)
 		(property "LCSC Part" "C672185"
-			(at 245.11 60.96 0)
+			(at 243.84 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2892,7 +3147,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 166.37 34.29 180)
+		(at 166.37 33.02 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2903,7 +3158,7 @@
 		(fields_autoplaced yes)
 		(uuid "f1969285-1fd4-4cb5-b4d4-a9ced4d0653b")
 		(property "Reference" "D1"
-			(at 166.37 27.94 0)
+			(at 166.37 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2913,7 +3168,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 166.37 30.48 0)
+			(at 166.37 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2923,7 +3178,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 34.29 0)
+			(at 166.37 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2934,7 +3189,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 34.29 0)
+			(at 166.37 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2945,7 +3200,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 166.37 34.29 0)
+			(at 166.37 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2956,7 +3211,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 166.37 34.29 0)
+			(at 166.37 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2967,7 +3222,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 166.37 34.29 0)
+			(at 166.37 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
