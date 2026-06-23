@@ -1,0 +1,64 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "e8c42cac-0e93-4c5c-9b53-7b1f62cb177c")
+	(paper "A4")
+	(title_block
+		(title "MEC-arm")
+		(rev "V1")
+	)
+	(lib_symbols)
+	(sheet
+		(at 203.2 39.37)
+		(size 41.91 97.79)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 98 117 1)
+		)
+		(uuid "be25bee3-1195-4ea3-83c3-333a16a4873f")
+		(property "Sheetname" "powerstage"
+			(at 203.2 38.6584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "powerstage.kicad_sch"
+			(at 203.2 137.7446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mec-arm-esc"
+				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
