@@ -1,0 +1,20 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\james\Documents\3.Personal Projects\MEC-arm\electrical\simulations\current-sense.net
+Start Time: Wed Jun 24 23:24:22 2026
+solver = Normal
+Maximum thread count: 24
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.151 seconds.
+
+Files loaded:
+C:\Users\james\Documents\3.Personal Projects\MEC-arm\electrical\simulations\current-sense.net
+C:\Users\james\AppData\Local\LTspice\lib\sub\UniversalOpAmp2.lib
+
+vmax: MAX(V(ADC_I_sense))=2.93128561974 FROM 0 TO 5
+vmin: MIN(V(ADC_I_sense))=0.374419271946 FROM 0 TO 5

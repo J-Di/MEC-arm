@@ -632,7 +632,7 @@
         "uuid": "e8c42cac-0e93-4c5c-9b53-7b1f62cb177c"
       }
     ],
-    "used_designators": "U1,A1,R5,C5,D2,#PWR6-8",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -643,6 +643,10 @@
     [
       "be25bee3-1195-4ea3-83c3-333a16a4873f",
       "powerstage"
+    ],
+    [
+      "cd532147-c7cc-47e2-b8ba-60e8b5948819",
+      "mcu"
     ]
   ],
   "text_variables": {},
