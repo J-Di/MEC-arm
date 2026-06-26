@@ -1954,13 +1954,14 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Current Sense Circuit sim for internal MCU Opamp\n"
+	(text "Current Sense Circuit sim for internal MCU Opamp.\n\nFor this esc, the internal opamps in the MCu will be leveraged in an effort to save on routing space, and costs. \nInternal Opamp can only amplify with gains with powers of 2, so this had to be takeninto consideration when sizing the shunt resistor, along with resolution adn power constrainrs. \nA 4m resistor was selected in order to maximize the total ADC usage (85%) while keeping power constaints in mind.\n\nUsing a 4m resistor, and a gain of 16, for the rated 20A, the min and max ADC values are 0.374 and 2.931 respectively.\nThis ensured around a 10% margin on the ADC\n\nWith a max of 20A, the peak power dissipated will be 1.6W, or the time average value of 0.8W.\n"
 		(exclude_from_sim no)
-		(at 446.278 122.428 0)
+		(at 421.386 113.538 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "b953ff88-5596-4aaf-a171-e407524be4f2")
 	)
@@ -2859,7 +2860,7 @@
 		(uuid "fc3a2d23-527d-4689-9736-05c51165de1a")
 	)
 	(image
-		(at 287.02 -81.28)
+		(at 520.7 205.74)
 		(scale 1.81946)
 		(uuid "0c4786f0-057f-4c35-adc2-7a7d76690131")
 		(data "iVBORw0KGgoAAAANSUhEUgAABQQAAAQqCAYAAAART3JpAAAABHNCSVQICAgIfAhkiAAAIABJREFU"
