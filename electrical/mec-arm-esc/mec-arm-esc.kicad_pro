@@ -632,7 +632,7 @@
         "uuid": "e8c42cac-0e93-4c5c-9b53-7b1f62cb177c"
       }
     ],
-    "used_designators": "#PWR14,#PWR17-18",
+    "used_designators": "SW2,R11,#PWR21-22",
     "variants": []
   },
   "sheets": [
@@ -645,7 +645,7 @@
       "powerstage"
     ],
     [
-      "cd532147-c7cc-47e2-b8ba-60e8b5948819",
+      "f98c3b84-d266-4f97-b31c-c06302106036",
       "mcu"
     ]
   ],
