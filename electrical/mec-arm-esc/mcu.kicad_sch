@@ -466,6 +466,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "core:NX3225GD-8MHZ-STD-CRA-3"
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -513,7 +516,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "8MHzz Oscillator"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2757,7 +2760,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 153.67) (xy 240.03 153.67)
+			(xy 227.33 153.67) (xy 254 153.67)
 		)
 		(stroke
 			(width 0)
@@ -2804,6 +2807,16 @@
 			(type default)
 		)
 		(uuid "3ecec26d-18e7-4f30-9652-bc0141ad0146")
+	)
+	(wire
+		(pts
+			(xy 227.33 105.41) (xy 238.76 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f11b463-5cf7-4c0b-94a9-1078b643b7a2")
 	)
 	(wire
 		(pts
@@ -3067,6 +3080,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 107.95) (xy 238.76 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bcf9f76-a7d3-41ce-88cc-a69d728bf9bf")
+	)
+	(wire
+		(pts
 			(xy 198.12 80.01) (xy 198.12 78.74)
 		)
 		(stroke
@@ -3084,6 +3107,16 @@
 			(type default)
 		)
 		(uuid "8df59905-0dca-4da9-a546-471196ca17ee")
+	)
+	(wire
+		(pts
+			(xy 227.33 110.49) (xy 254 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "911aad32-2504-4255-9777-9b862cfb31d7")
 	)
 	(wire
 		(pts
@@ -3217,6 +3250,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 113.03) (xy 238.76 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7b49de1-a0d5-478d-ae33-ce6a41090a3c")
+	)
+	(wire
+		(pts
 			(xy 226.06 62.23) (xy 226.06 63.5)
 		)
 		(stroke
@@ -3334,6 +3377,16 @@
 			(type default)
 		)
 		(uuid "d4d8d528-20d1-4d40-8dc6-a0e3af8ac4d8")
+	)
+	(wire
+		(pts
+			(xy 227.33 115.57) (xy 238.76 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d93682d9-f8a9-4fdd-8781-23be3450c2c7")
 	)
 	(wire
 		(pts
@@ -3555,6 +3608,30 @@
 		)
 		(uuid "fd08196d-3b8d-4b78-bd1b-999db72dd464")
 	)
+	(global_label "SPI_MOSI"
+		(shape output)
+		(at 238.76 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0be99ff8-08cf-4ccc-8db3-76a758717593")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.3933 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "TIM1_CH3"
 		(shape output)
 		(at 240.03 128.27 0)
@@ -3629,7 +3706,7 @@
 	)
 	(global_label "DRV_nFault"
 		(shape input)
-		(at 240.03 153.67 0)
+		(at 254 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3639,7 +3716,7 @@
 		)
 		(uuid "55c51275-141b-4de9-b3ab-f81c78588f90")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 254.2031 153.67 0)
+			(at 268.1731 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3699,6 +3776,30 @@
 			)
 		)
 	)
+	(global_label "SPI_SCK"
+		(shape output)
+		(at 238.76 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a3d2567e-81a4-4434-b669-6a97071169c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 249.5466 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "TIM1_CH2"
 		(shape output)
 		(at 240.03 130.81 0)
@@ -3747,6 +3848,54 @@
 			)
 		)
 	)
+	(global_label "SPI_ENC_CS"
+		(shape output)
+		(at 238.76 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c07e2ef7-f798-4bbb-862b-678d19967c8a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 252.9937 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SPI_MISO"
+		(shape input)
+		(at 254 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d71f62d2-641b-4f45-91e8-1bedf8c80203")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 265.6333 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "I_SENSE_A_ADC1"
 		(shape input)
 		(at 171.45 125.73 180)
@@ -3784,6 +3933,30 @@
 		(uuid "e5c309ed-0dee-4b06-9c68-ebe3ce1f5f16")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 253.3566 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SPI_DRV_NSCS"
+		(shape output)
+		(at 238.76 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ee76449b-62a6-48a5-b40b-0ae10ebf5b66")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 255.4128 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6405,7 +6578,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8MHzz Oscillator"
 			(at 120.65 110.49 0)
 			(hide yes)
 			(show_name no)
