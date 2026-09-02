@@ -1,0 +1,15 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\james\Documents\3.Personal Projects\MEC-arm\electrical\simulations\Draft1.net
+Start Time: Tue Jun 30 20:08:09 2026
+solver = Normal
+Maximum thread count: 24
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.650 seconds.
+
+Files loaded:
+C:\Users\james\Documents\3.Personal Projects\MEC-arm\electrical\simulations\Draft1.net
+C:\Users\james\AppData\Local\LTspice\lib\cmp\standard.dio
+

@@ -494,7 +494,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:OSC-SMD_2P-L3.2-W2.5"
+			(property "Footprint" "core:OSC-SMD_2P-L3.2-W2.5"
 				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -516,7 +516,7 @@
 					)
 				)
 			)
-			(property "Description" "8MHzz Oscillator"
+			(property "Description" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -653,7 +653,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
-				(at 6.096 -1.016 0)
+				(at 0 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -672,7 +672,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:SW-SMD_4P-L4.2-W3.4-P2.15-LS5.2"
+			(property "Footprint" "core:SW-SMD_4P-L4.2-W3.4-P2.15-LS5.2"
 				(at 0 -13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -741,7 +741,7 @@
 			(symbol "SH-1808SN-250GF_0_1"
 				(polyline
 					(pts
-						(xy 0 3.81) (xy 0 1.27)
+						(xy 0 5.08) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -753,7 +753,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 3.81) (xy 0 1.27)
+						(xy 0 5.08) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -764,7 +764,7 @@
 					)
 				)
 				(circle
-					(center 0 1.02)
+					(center 0 2.29)
 					(radius 0.25)
 					(stroke
 						(width 0)
@@ -775,7 +775,7 @@
 					)
 				)
 				(circle
-					(center 0 -3.56)
+					(center 0 -2.29)
 					(radius 0.25)
 					(stroke
 						(width 0)
@@ -787,7 +787,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -3.81)
+						(xy 1.27 2.54) (xy 1.27 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -799,7 +799,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 3.81 -1.27)
+						(xy 1.27 0) (xy 3.81 0)
 					)
 					(stroke
 						(width 0)
@@ -812,7 +812,7 @@
 			)
 			(symbol "SH-1808SN-250GF_1_1"
 				(pin unspecified line
-					(at 0 3.81 270)
+					(at 0 5.08 270)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -830,7 +830,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 0 6.35 270)
+					(at 0 7.62 270)
 					(length 5.08)
 					(hide yes)
 					(name "2"
@@ -849,7 +849,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 0 -6.35 90)
+					(at 0 -5.08 90)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -867,7 +867,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 0 -8.89 90)
+					(at 0 -7.62 90)
 					(length 5.08)
 					(hide yes)
 					(name "4"
@@ -905,7 +905,7 @@
 				)
 			)
 			(property "Value" "STM32G474RET3"
-				(at -25.908 46.228 0)
+				(at 0 -44.45 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -914,7 +914,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:LQFP-64_L10.0-W10.0-P0.50-LS12.0-BL"
+			(property "Footprint" "mcu:LQFP-64_L10.0-W10.0-P0.50-LS12.0-BL"
 				(at 0 -46.99 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -993,8 +993,8 @@
 			)
 			(symbol "STM32G474RET3_0_1"
 				(rectangle
-					(start -21.59 41.91)
-					(end 21.59 -38.1)
+					(start -20.32 40.64)
+					(end 22.86 -39.37)
 					(stroke
 						(width 0)
 						(type default)
@@ -1004,7 +1004,7 @@
 					)
 				)
 				(circle
-					(center -20.32 40.64)
+					(center -19.05 39.37)
 					(radius 0.38)
 					(stroke
 						(width 0)
@@ -1015,7 +1015,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -7.62 44.45 270)
+					(at -6.35 43.18 270)
 					(length 2.54)
 					(name "VBAT"
 						(effects
@@ -1033,7 +1033,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 24.13 0)
+					(at -22.86 22.86 0)
 					(length 2.54)
 					(name "PC13"
 						(effects
@@ -1051,7 +1051,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 21.59 0)
+					(at -22.86 20.32 0)
 					(length 2.54)
 					(name "PC14-OSC32_IN"
 						(effects
@@ -1069,7 +1069,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 19.05 0)
+					(at -22.86 17.78 0)
 					(length 2.54)
 					(name "PC15-OSC32_OUT"
 						(effects
@@ -1087,7 +1087,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 16.51 0)
+					(at -22.86 15.24 0)
 					(length 2.54)
 					(name "PF0-OSC_IN"
 						(effects
@@ -1105,7 +1105,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 13.97 0)
+					(at -22.86 12.7 0)
 					(length 2.54)
 					(name "PF1-OSC_OUT"
 						(effects
@@ -1123,7 +1123,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 31.75 0)
+					(at -22.86 30.48 0)
 					(length 2.54)
 					(name "PG10-NRST"
 						(effects
@@ -1141,7 +1141,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 11.43 0)
+					(at -22.86 10.16 0)
 					(length 2.54)
 					(name "PC0"
 						(effects
@@ -1159,7 +1159,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 8.89 0)
+					(at -22.86 7.62 0)
 					(length 2.54)
 					(name "PC1"
 						(effects
@@ -1177,7 +1177,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 6.35 0)
+					(at -22.86 5.08 0)
 					(length 2.54)
 					(name "PC2"
 						(effects
@@ -1195,7 +1195,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 3.81 0)
+					(at -22.86 2.54 0)
 					(length 2.54)
 					(name "PC3"
 						(effects
@@ -1213,7 +1213,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 1.27 0)
+					(at -22.86 0 0)
 					(length 2.54)
 					(name "PA0"
 						(effects
@@ -1231,7 +1231,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -1.27 0)
+					(at -22.86 -2.54 0)
 					(length 2.54)
 					(name "PA1"
 						(effects
@@ -1249,7 +1249,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -3.81 0)
+					(at -22.86 -5.08 0)
 					(length 2.54)
 					(name "PA2"
 						(effects
@@ -1267,7 +1267,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -2.54 -40.64 90)
+					(at -1.27 -41.91 90)
 					(length 2.54)
 					(name "VSS"
 						(effects
@@ -1285,7 +1285,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 0 44.45 270)
+					(at 1.27 43.18 270)
 					(length 2.54)
 					(name "VDD"
 						(effects
@@ -1303,7 +1303,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -6.35 0)
+					(at -22.86 -7.62 0)
 					(length 2.54)
 					(name "PA3"
 						(effects
@@ -1321,7 +1321,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -8.89 0)
+					(at -22.86 -10.16 0)
 					(length 2.54)
 					(name "PA4"
 						(effects
@@ -1339,7 +1339,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -11.43 0)
+					(at -22.86 -12.7 0)
 					(length 2.54)
 					(name "PA5"
 						(effects
@@ -1357,7 +1357,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -13.97 0)
+					(at -22.86 -15.24 0)
 					(length 2.54)
 					(name "PA6"
 						(effects
@@ -1375,7 +1375,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -16.51 0)
+					(at -22.86 -17.78 0)
 					(length 2.54)
 					(name "PA7"
 						(effects
@@ -1393,7 +1393,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -19.05 0)
+					(at -22.86 -20.32 0)
 					(length 2.54)
 					(name "PC4"
 						(effects
@@ -1411,7 +1411,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -21.59 0)
+					(at -22.86 -22.86 0)
 					(length 2.54)
 					(name "PC5"
 						(effects
@@ -1429,7 +1429,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -24.13 0)
+					(at -22.86 -25.4 0)
 					(length 2.54)
 					(name "PB0"
 						(effects
@@ -1447,7 +1447,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -26.67 0)
+					(at -22.86 -27.94 0)
 					(length 2.54)
 					(name "PB1"
 						(effects
@@ -1465,7 +1465,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -29.21 0)
+					(at -22.86 -30.48 0)
 					(length 2.54)
 					(name "PB2"
 						(effects
@@ -1483,7 +1483,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 5.08 -40.64 90)
+					(at 6.35 -41.91 90)
 					(length 2.54)
 					(name "VSSA"
 						(effects
@@ -1501,7 +1501,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 7.62 44.45 270)
+					(at 8.89 43.18 270)
 					(length 2.54)
 					(name "VREF+"
 						(effects
@@ -1519,7 +1519,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 5.08 44.45 270)
+					(at 6.35 43.18 270)
 					(length 2.54)
 					(name "VDDA"
 						(effects
@@ -1537,7 +1537,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 -31.75 0)
+					(at -22.86 -33.02 0)
 					(length 2.54)
 					(name "PB10"
 						(effects
@@ -1555,7 +1555,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -5.08 -40.64 90)
+					(at -3.81 -41.91 90)
 					(length 2.54)
 					(name "VSS"
 						(effects
@@ -1573,7 +1573,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -5.08 44.45 270)
+					(at -3.81 43.18 270)
 					(length 2.54)
 					(name "VDD"
 						(effects
@@ -1591,7 +1591,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -31.75 180)
+					(at 25.4 -33.02 180)
 					(length 2.54)
 					(name "PB11"
 						(effects
@@ -1609,7 +1609,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -29.21 180)
+					(at 25.4 -30.48 180)
 					(length 2.54)
 					(name "PB12"
 						(effects
@@ -1627,7 +1627,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -26.67 180)
+					(at 25.4 -27.94 180)
 					(length 2.54)
 					(name "PB13"
 						(effects
@@ -1645,7 +1645,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -24.13 180)
+					(at 25.4 -25.4 180)
 					(length 2.54)
 					(name "PB14"
 						(effects
@@ -1663,7 +1663,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -21.59 180)
+					(at 25.4 -22.86 180)
 					(length 2.54)
 					(name "PB15"
 						(effects
@@ -1681,7 +1681,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -19.05 180)
+					(at 25.4 -20.32 180)
 					(length 2.54)
 					(name "PC6"
 						(effects
@@ -1699,7 +1699,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -16.51 180)
+					(at 25.4 -17.78 180)
 					(length 2.54)
 					(name "PC7"
 						(effects
@@ -1717,7 +1717,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -13.97 180)
+					(at 25.4 -15.24 180)
 					(length 2.54)
 					(name "PC8"
 						(effects
@@ -1735,7 +1735,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -11.43 180)
+					(at 25.4 -12.7 180)
 					(length 2.54)
 					(name "PC9"
 						(effects
@@ -1753,7 +1753,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -8.89 180)
+					(at 25.4 -10.16 180)
 					(length 2.54)
 					(name "PA8"
 						(effects
@@ -1771,7 +1771,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -6.35 180)
+					(at 25.4 -7.62 180)
 					(length 2.54)
 					(name "PA9"
 						(effects
@@ -1789,7 +1789,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -3.81 180)
+					(at 25.4 -5.08 180)
 					(length 2.54)
 					(name "PA10"
 						(effects
@@ -1807,7 +1807,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 -1.27 180)
+					(at 25.4 -2.54 180)
 					(length 2.54)
 					(name "PA11"
 						(effects
@@ -1825,7 +1825,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 1.27 180)
+					(at 25.4 0 180)
 					(length 2.54)
 					(name "PA12"
 						(effects
@@ -1843,7 +1843,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 0 -40.64 90)
+					(at 1.27 -41.91 90)
 					(length 2.54)
 					(name "VSS"
 						(effects
@@ -1861,7 +1861,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 2.54 44.45 270)
+					(at 3.81 43.18 270)
 					(length 2.54)
 					(name "VDD"
 						(effects
@@ -1879,7 +1879,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 3.81 180)
+					(at 25.4 2.54 180)
 					(length 2.54)
 					(name "PA13"
 						(effects
@@ -1897,7 +1897,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 6.35 180)
+					(at 25.4 5.08 180)
 					(length 2.54)
 					(name "PA14"
 						(effects
@@ -1915,7 +1915,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 8.89 180)
+					(at 25.4 7.62 180)
 					(length 2.54)
 					(name "PA15"
 						(effects
@@ -1933,7 +1933,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 11.43 180)
+					(at 25.4 10.16 180)
 					(length 2.54)
 					(name "PC10"
 						(effects
@@ -1951,7 +1951,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 13.97 180)
+					(at 25.4 12.7 180)
 					(length 2.54)
 					(name "PC11"
 						(effects
@@ -1969,7 +1969,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 16.51 180)
+					(at 25.4 15.24 180)
 					(length 2.54)
 					(name "PC12"
 						(effects
@@ -1987,7 +1987,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 19.05 180)
+					(at 25.4 17.78 180)
 					(length 2.54)
 					(name "PD2"
 						(effects
@@ -2005,7 +2005,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 21.59 180)
+					(at 25.4 20.32 180)
 					(length 2.54)
 					(name "PB3"
 						(effects
@@ -2023,7 +2023,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 24.13 180)
+					(at 25.4 22.86 180)
 					(length 2.54)
 					(name "PB4"
 						(effects
@@ -2041,7 +2041,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 26.67 180)
+					(at 25.4 25.4 180)
 					(length 2.54)
 					(name "PB5"
 						(effects
@@ -2059,7 +2059,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 29.21 180)
+					(at 25.4 27.94 180)
 					(length 2.54)
 					(name "PB6"
 						(effects
@@ -2077,7 +2077,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 31.75 180)
+					(at 25.4 30.48 180)
 					(length 2.54)
 					(name "PB7"
 						(effects
@@ -2095,7 +2095,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -24.13 34.29 0)
+					(at -22.86 33.02 0)
 					(length 2.54)
 					(name "PB8-BOOT0"
 						(effects
@@ -2113,7 +2113,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 24.13 34.29 180)
+					(at 25.4 33.02 180)
 					(length 2.54)
 					(name "PB9"
 						(effects
@@ -2131,7 +2131,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 2.54 -40.64 90)
+					(at 3.81 -41.91 90)
 					(length 2.54)
 					(name "VSS"
 						(effects
@@ -2149,7 +2149,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -2.54 44.45 270)
+					(at -1.27 43.18 270)
 					(length 2.54)
 					(name "VDD"
 						(effects
@@ -2527,6 +2527,12 @@
 		(uuid "9e4e4586-8320-4f69-b6fa-cd6e8b47854e")
 	)
 	(junction
+		(at 130.81 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a481bda7-e0d9-40a3-806c-89b3068bac09")
+	)
+	(junction
 		(at 161.29 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2543,12 +2549,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b53075f0-54e5-47da-986e-afc91cdf0d11")
-	)
-	(junction
-		(at 130.81 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4124ba7-8585-469c-bd5d-1b1f42cb6e89")
 	)
 	(junction
 		(at 157.48 86.36)
@@ -2767,6 +2767,16 @@
 			(type default)
 		)
 		(uuid "3191d8b3-f6d2-4a7b-a6cb-d7d7ea0b4e8e")
+	)
+	(wire
+		(pts
+			(xy 170.18 115.57) (xy 179.07 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34a4a338-5ec7-41ed-854e-a6e6df214581")
 	)
 	(wire
 		(pts
@@ -3010,7 +3020,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 123.19) (xy 237.49 123.19)
+			(xy 227.33 123.19) (xy 240.03 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3540,33 +3550,13 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 125.73) (xy 237.49 125.73)
+			(xy 227.33 125.73) (xy 240.03 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ffabc302-2fe7-4aba-a326-ea651cdc0a24")
-	)
-	(label "USB_D-"
-		(at 229.87 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0c5f6965-5a0f-4c03-a629-348b4addb3f8")
-	)
-	(label "USB_D+"
-		(at 229.87 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "342d3d5f-7377-4400-9c8e-90312f20e0f7")
 	)
 	(label "NRST"
 		(at 170.18 92.71 0)
@@ -3645,6 +3635,30 @@
 		(uuid "0ee7e404-ae17-4374-89c6-b237560c6d9f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 252.0261 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "USB_D-"
+		(shape bidirectional)
+		(at 240.03 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "19d0bd95-da1d-43da-afca-ca8d23f40429")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 251.7465 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3765,6 +3779,30 @@
 		(uuid "80632436-e0ff-4980-993b-d70138a29bb7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 252.0261 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "USB_D+"
+		(shape bidirectional)
+		(at 240.03 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a0a985ef-eb0b-48ec-95ed-2cfbe803101b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 251.7465 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3965,6 +4003,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "USB_VBUS_SENSING"
+		(shape input)
+		(at 170.18 115.57 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f33ca650-7788-419b-bb09-cfcbb88bec27")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.4472 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -4637,6 +4699,119 @@
 		)
 	)
 	(symbol
+		(lib_id "core:NX3225GD-8MHZ-STD-CRA-3")
+		(at 120.65 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69e860c6-c94d-4098-8ecf-b0d280817ebb")
+		(property "Reference" "X1"
+			(at 120.65 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NX3225GD-8MHZ-STD-CRA-3"
+			(at 120.65 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "core:OSC-SMD_2P-L3.2-W2.5"
+			(at 120.65 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C889706.pdf"
+			(at 120.65 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "NDK"
+			(at 120.65 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "NX3225GD-8MHZ-STD-CRA-3"
+			(at 120.65 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C889706"
+			(at 120.65 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf49fc8b-e410-40f9-9259-a693b0ae653b")
+		)
+		(pin "2"
+			(uuid "ddd72b49-61fc-4e90-8ad8-45bb18da4f60")
+		)
+		(instances
+			(project "mec-arm-esc"
+				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/f98c3b84-d266-4f97-b31c-c06302106036"
+					(reference "X1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 208.28 48.26 0)
 		(unit 1)
@@ -4878,7 +5053,7 @@
 	)
 	(symbol
 		(lib_id "core:SH-1808SN-250GF")
-		(at 130.81 76.2 0)
+		(at 130.81 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4886,9 +5061,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "87b29de2-b8a0-4f7e-80e6-bc0071f1f197")
+		(fields_autoplaced yes)
+		(uuid "918a455f-8661-4f69-878c-6482e42c74ec")
 		(property "Reference" "SW1"
-			(at 135.636 77.47 0)
+			(at 135.89 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4900,7 +5076,6 @@
 		)
 		(property "Value" "SH-1808SN-250GF"
 			(at 135.89 77.4699 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4910,8 +5085,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:SW-SMD_4P-L4.2-W3.4-P2.15-LS5.2"
-			(at 130.81 90.17 0)
+		(property "Footprint" "core:SW-SMD_4P-L4.2-W3.4-P2.15-LS5.2"
+			(at 130.81 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4922,7 +5097,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C52092028.pdf"
-			(at 130.81 92.71 0)
+			(at 130.81 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4933,7 +5108,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 76.2 0)
+			(at 130.81 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4944,7 +5119,7 @@
 			)
 		)
 		(property "Manufacturer" "SHOU HAN(首韩)"
-			(at 130.81 95.25 0)
+			(at 130.81 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4955,7 +5130,7 @@
 			)
 		)
 		(property "MPN" "SH-1808SN-250gf"
-			(at 130.81 97.79 0)
+			(at 130.81 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4966,7 +5141,7 @@
 			)
 		)
 		(property "LCSC Part" "C52092028"
-			(at 130.81 100.33 0)
+			(at 130.81 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4976,320 +5151,22 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "54f356c1-dc36-4c72-8d28-d9d9da71e46b")
-		)
 		(pin "1"
-			(uuid "93d96531-fab5-4c80-9ca3-e0948577f401")
+			(uuid "57b6be93-2a05-4c2d-a0b7-319b8a3e1346")
 		)
 		(pin "3"
-			(uuid "e8c7e946-9df8-49c8-bf39-8c7f234df851")
+			(uuid "d6219a2f-4225-4c69-9f7c-d8249bcb054d")
 		)
 		(pin "4"
-			(uuid "10f3d678-fe71-4d1d-b6f3-3136b8d93032")
+			(uuid "e5d23b00-023c-4862-952c-ebab600dd106")
+		)
+		(pin "2"
+			(uuid "e559fbc4-7a9c-4f78-8578-99121cb77411")
 		)
 		(instances
 			(project "mec-arm-esc"
 				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/f98c3b84-d266-4f97-b31c-c06302106036"
 					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mcu:STM32G474RET3")
-		(at 203.2 124.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9b16346d-b2b5-450e-ba59-d7423e93b983")
-		(property "Reference" "U2"
-			(at 179.07 78.232 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "STM32G474RET3"
-			(at 185.928 80.772 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:LQFP-64_L10.0-W10.0-P0.50-LS12.0-BL"
-			(at 203.2 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C1236669.pdf"
-			(at 203.2 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 203.2 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "ST(意法半导体)"
-			(at 203.2 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "STM32G474RET3"
-			(at 203.2 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C1236669"
-			(at 203.2 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "22"
-			(uuid "3ac99e69-4a79-4453-a23f-6663b4a30bb4")
-		)
-		(pin "12"
-			(uuid "be944729-4c70-4010-acf0-331d94926ede")
-		)
-		(pin "2"
-			(uuid "0726dc14-17d9-4aa6-a28a-0c1680eded54")
-		)
-		(pin "11"
-			(uuid "0dcea97d-0ffc-48b9-afad-b3f68e9be623")
-		)
-		(pin "20"
-			(uuid "eda1d3ae-cc64-4cf8-8909-6620bed7f22d")
-		)
-		(pin "7"
-			(uuid "50672c70-62cd-4092-b498-8689f7e33ba0")
-		)
-		(pin "10"
-			(uuid "8386f51a-edfc-4c5b-a028-c2e5ad337b51")
-		)
-		(pin "5"
-			(uuid "8c0b542d-4d94-4433-8494-3600a5afa833")
-		)
-		(pin "19"
-			(uuid "6be53822-0414-462b-b8da-648d02598715")
-		)
-		(pin "17"
-			(uuid "2e9b40c4-3729-496b-bf5c-aec3112961c5")
-		)
-		(pin "21"
-			(uuid "005454ee-9f02-4fe2-accc-af971aefa29e")
-		)
-		(pin "13"
-			(uuid "c0c19acc-6a3b-4ac8-8120-2f0ff26e259b")
-		)
-		(pin "16"
-			(uuid "abe1ea14-7d8a-4da0-81d9-ed092e29ba91")
-		)
-		(pin "1"
-			(uuid "c827af2d-15d5-4718-a207-e73c3e895032")
-		)
-		(pin "38"
-			(uuid "3eb19e34-d360-4c9f-8a26-3bf61f4a2652")
-		)
-		(pin "6"
-			(uuid "be06c519-58e4-48fa-a997-65d3cf4e41fc")
-		)
-		(pin "8"
-			(uuid "37dd4681-9822-4d1b-b2e1-b0957a1e11cc")
-		)
-		(pin "4"
-			(uuid "bf44da0c-6a94-47ab-8ab8-d2ebedeffa96")
-		)
-		(pin "15"
-			(uuid "6e96406c-b4f6-4de3-bff0-eaadb907b4df")
-		)
-		(pin "18"
-			(uuid "c3b52920-cf37-4a9b-a4c3-98812aa959c5")
-		)
-		(pin "32"
-			(uuid "a9de4081-385e-40ee-8a92-0b125e1170d2")
-		)
-		(pin "14"
-			(uuid "3208926b-bbee-43fa-bab8-c1ce8ba946f6")
-		)
-		(pin "3"
-			(uuid "d5299983-6280-4a42-b9e8-09caa1194ef0")
-		)
-		(pin "9"
-			(uuid "33ac8a5c-3947-4b37-bc52-f96eaa6cf0c4")
-		)
-		(pin "25"
-			(uuid "3648f6bd-53b4-48f2-b9d1-180761b65c87")
-		)
-		(pin "24"
-			(uuid "c83787cd-b340-4f86-9682-e2c02c9d06f5")
-		)
-		(pin "33"
-			(uuid "9b5c3fc0-a41c-4171-ac7f-13231bc44f2d")
-		)
-		(pin "27"
-			(uuid "4c7fd267-6c3d-41c8-9a9b-9fd6842ad74a")
-		)
-		(pin "31"
-			(uuid "da466982-06db-437a-aee4-eeca2ab473b8")
-		)
-		(pin "23"
-			(uuid "0e9b9d85-be08-4cb4-8167-f4b3f52d539d")
-		)
-		(pin "30"
-			(uuid "e2166610-f297-4e1b-b0ec-b4757bdad3c5")
-		)
-		(pin "34"
-			(uuid "a4bde72e-b73c-423f-98f7-095519a281cc")
-		)
-		(pin "29"
-			(uuid "089eed88-c902-4d62-b642-4bbbd49f57e8")
-		)
-		(pin "35"
-			(uuid "1f9598b7-1588-426b-b938-491571c39b10")
-		)
-		(pin "36"
-			(uuid "f53c1158-de6e-43cb-a20d-46def03e66a1")
-		)
-		(pin "26"
-			(uuid "d562e331-b476-4dd7-9e70-eb17c6d3eec3")
-		)
-		(pin "28"
-			(uuid "6bb54a89-7d50-46b6-8f7b-bbe4cb355baf")
-		)
-		(pin "37"
-			(uuid "511d442b-e686-4db0-988b-f8d343febd65")
-		)
-		(pin "50"
-			(uuid "96bbdb58-5a3e-49e6-8a8f-7ee4bbd3aa82")
-		)
-		(pin "57"
-			(uuid "204d99e6-a1ea-4fc2-ad40-95b79c2d47dd")
-		)
-		(pin "53"
-			(uuid "8fea0e32-afad-48d9-bf14-94c90b259ad1")
-		)
-		(pin "44"
-			(uuid "691c3acb-e963-4eb6-8069-b2172b1f3cfc")
-		)
-		(pin "48"
-			(uuid "b7adb979-b2ad-4e1e-8d9c-0df3481199a8")
-		)
-		(pin "54"
-			(uuid "8690aef1-82c6-4ccb-afb7-34b805dd9c15")
-		)
-		(pin "52"
-			(uuid "774951c4-d0b5-455b-bf41-01f415ab4de1")
-		)
-		(pin "42"
-			(uuid "f1c24cef-e812-4ccf-a899-c5269701c350")
-		)
-		(pin "46"
-			(uuid "99f44904-75f7-4545-9d96-fbd4a41c92bd")
-		)
-		(pin "58"
-			(uuid "6e0278da-b943-47b7-a318-bbb158cc51bb")
-		)
-		(pin "60"
-			(uuid "2e207216-f6a1-4c7d-83d7-509f9bb17f3c")
-		)
-		(pin "39"
-			(uuid "97c06f11-c03d-4b80-8c17-5a78196f4a50")
-		)
-		(pin "43"
-			(uuid "5eacb62e-78b2-4a91-b779-ce7986aceea4")
-		)
-		(pin "51"
-			(uuid "76e952ba-44a6-443a-bb65-b9601fc3f698")
-		)
-		(pin "62"
-			(uuid "3188a89e-9de6-4b87-b711-3292863a5639")
-		)
-		(pin "63"
-			(uuid "61fc4f51-8dde-4d9f-820e-51bc2c1c4d65")
-		)
-		(pin "64"
-			(uuid "845c48a3-c321-44d6-a972-2f38df3da117")
-		)
-		(pin "40"
-			(uuid "369ef386-1c5a-474d-b428-451aa193fea7")
-		)
-		(pin "41"
-			(uuid "101f761c-7b91-4eb4-9247-052de758a827")
-		)
-		(pin "47"
-			(uuid "354f8f6c-c8ff-478c-bc22-f0c25643a813")
-		)
-		(pin "61"
-			(uuid "7be599a6-15e4-4a69-87be-f521921c0e4a")
-		)
-		(pin "45"
-			(uuid "39117ee6-403f-4838-a3f1-59cac4563678")
-		)
-		(pin "49"
-			(uuid "518bb9f0-713e-4455-84d6-24d57592bc80")
-		)
-		(pin "55"
-			(uuid "06ce4914-9d13-41e6-9cd8-cd9a20adacee")
-		)
-		(pin "56"
-			(uuid "5757cfd3-1b89-48d3-85fd-4b5333f6aa2b")
-		)
-		(pin "59"
-			(uuid "dff67d44-4a11-46f0-a643-cd9966fd5cf5")
-		)
-		(instances
-			(project "mec-arm-esc"
-				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/f98c3b84-d266-4f97-b31c-c06302106036"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -5930,6 +5807,126 @@
 		)
 	)
 	(symbol
+		(lib_id "core:SH-1808SN-250GF")
+		(at 149.86 91.44 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ccb78301-307e-4a66-8722-b2c7cc997b62")
+		(property "Reference" "SW2"
+			(at 142.748 93.218 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SH-1808SN-250GF"
+			(at 145.034 102.108 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "core:SW-SMD_4P-L4.2-W3.4-P2.15-LS5.2"
+			(at 149.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C52092028.pdf"
+			(at 149.86 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 149.86 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SHOU HAN(首韩)"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SH-1808SN-250gf"
+			(at 149.86 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C52092028"
+			(at 149.86 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01986e8b-b656-4bc2-a11d-3170a6655a35")
+		)
+		(pin "3"
+			(uuid "1d6d319c-bc16-4e0c-b25f-eae335c1add1")
+		)
+		(pin "4"
+			(uuid "0964627b-2a5c-4bca-91b3-a1ae6f272ccd")
+		)
+		(pin "2"
+			(uuid "35a79954-0e0b-4bd3-b4d7-a67bae4256c1")
+		)
+		(instances
+			(project "mec-arm-esc"
+				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/f98c3b84-d266-4f97-b31c-c06302106036"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 157.48 96.52 0)
 		(unit 1)
@@ -6248,9 +6245,8 @@
 		)
 	)
 	(symbol
-		(lib_id "core:SH-1808SN-250GF")
-		(at 149.86 90.17 0)
-		(mirror y)
+		(lib_id "mcu:STM32G474RET3")
+		(at 201.93 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6258,9 +6254,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ed99a7df-2d76-452f-941b-9088866aa96b")
-		(property "Reference" "SW2"
-			(at 145.034 91.44 0)
+		(fields_autoplaced yes)
+		(uuid "e8ef8808-faa5-4008-b6b7-03a5f87d5f04")
+		(property "Reference" "U2"
+			(at 210.4233 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6270,9 +6267,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SH-1808SN-250GF"
-			(at 144.78 91.4399 0)
-			(hide yes)
+		(property "Value" "STM32G474RET3"
+			(at 210.4233 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6282,8 +6278,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:SW-SMD_4P-L4.2-W3.4-P2.15-LS5.2"
-			(at 149.86 104.14 0)
+		(property "Footprint" "mcu:LQFP-64_L10.0-W10.0-P0.50-LS12.0-BL"
+			(at 201.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6293,8 +6289,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C52092028.pdf"
-			(at 149.86 106.68 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1236669.pdf"
+			(at 201.93 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6305,7 +6301,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 90.17 0)
+			(at 201.93 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6315,8 +6311,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "SHOU HAN(首韩)"
-			(at 149.86 109.22 0)
+		(property "Manufacturer" "ST(意法半导体)"
+			(at 201.93 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6326,8 +6322,8 @@
 				)
 			)
 		)
-		(property "MPN" "SH-1808SN-250gf"
-			(at 149.86 111.76 0)
+		(property "MPN" "STM32G474RET3"
+			(at 201.93 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6337,8 +6333,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C52092028"
-			(at 149.86 114.3 0)
+		(property "LCSC Part" "C1236669"
+			(at 201.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6348,22 +6344,202 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "e029c3bb-d761-45f4-be75-486aa42b0a63")
+		(pin "17"
+			(uuid "f6af59c9-1d7e-4ea9-9df7-1389b6b195fd")
 		)
-		(pin "1"
-			(uuid "c36ae235-72c8-438d-a9a2-6165eebacaab")
+		(pin "7"
+			(uuid "aebbfb7f-cb61-4475-b3fc-eaa70e170615")
 		)
-		(pin "3"
-			(uuid "53faf6fe-0ea6-492c-a79b-c9b5081c4dfe")
+		(pin "19"
+			(uuid "6c55589a-db65-4fe5-8d05-6563b3c7677c")
+		)
+		(pin "11"
+			(uuid "e533897f-b748-41e0-8a4f-f7f6b55f3080")
 		)
 		(pin "4"
-			(uuid "123ad199-e01a-44b9-bdcc-483e8d413b86")
+			(uuid "4d6120f2-a098-4b4f-a134-2d8e9c56a17f")
+		)
+		(pin "15"
+			(uuid "b3349dce-29bf-437d-9c48-d97040414c3e")
+		)
+		(pin "6"
+			(uuid "c95d777a-c631-4470-8a44-1e42429a66a5")
+		)
+		(pin "9"
+			(uuid "e3bc6845-d66b-42b6-b6f2-aa07385235be")
+		)
+		(pin "10"
+			(uuid "66847072-2f30-4656-a1a5-945af0ca5940")
+		)
+		(pin "16"
+			(uuid "1c493e56-4ab4-48f8-ad23-1b7c01e0476f")
+		)
+		(pin "1"
+			(uuid "ece57e9e-8f52-4653-8a21-578943c2ff00")
+		)
+		(pin "2"
+			(uuid "58827668-1952-48b0-b451-02a69e1ee45a")
+		)
+		(pin "13"
+			(uuid "40657685-8219-44d5-8ad4-f6f095972ba7")
+		)
+		(pin "32"
+			(uuid "3192a799-aea4-438d-89d1-fe1d6c38bcf9")
+		)
+		(pin "35"
+			(uuid "b8c9ca5d-1c34-4eb3-bc2a-5f61fecfc321")
+		)
+		(pin "37"
+			(uuid "5072dd2b-3605-4289-a55b-7d1053779922")
+		)
+		(pin "31"
+			(uuid "df2286cc-bfc2-4dde-b6ce-fcd9a12794ae")
+		)
+		(pin "39"
+			(uuid "b751050a-b33a-44e1-838d-b33e343f1970")
+		)
+		(pin "29"
+			(uuid "115326fb-c820-40f6-aca9-f6de35d73258")
+		)
+		(pin "5"
+			(uuid "eb267016-53cb-4a4c-adea-9a8fd7e172a6")
+		)
+		(pin "3"
+			(uuid "294f0b40-d1e4-40f8-bc75-64e37e8b2475")
+		)
+		(pin "8"
+			(uuid "e027e1bb-790a-4166-9882-cc045a4d76ca")
+		)
+		(pin "12"
+			(uuid "2a7bc485-8941-4473-a8db-fa081f9c5876")
+		)
+		(pin "14"
+			(uuid "192e5ee6-c549-438c-bc6e-3d9956548a23")
+		)
+		(pin "18"
+			(uuid "35705bf3-6f53-47c1-ab60-2b162304bb7b")
+		)
+		(pin "20"
+			(uuid "de0c3ce8-164a-405e-92e9-04e3f9b50c6c")
+		)
+		(pin "21"
+			(uuid "cf846a1d-8e00-46e3-9ada-211e54a5ff3c")
+		)
+		(pin "23"
+			(uuid "47cff72f-24ca-4c94-9cca-f442041c232b")
+		)
+		(pin "24"
+			(uuid "8126b0a9-df63-4e46-8edb-5c27fc4bae29")
+		)
+		(pin "25"
+			(uuid "7284b3a6-c434-44c2-a9f0-231c3a451683")
+		)
+		(pin "26"
+			(uuid "90cf220b-be06-4ddb-b769-f22532c25724")
+		)
+		(pin "27"
+			(uuid "f3f51aa6-d81b-40fb-a59e-3ec8b177410e")
+		)
+		(pin "28"
+			(uuid "d538cb02-85c5-4692-a542-3a654134912c")
+		)
+		(pin "30"
+			(uuid "7a23b1fd-47c0-4cab-b8e9-af573a3ff167")
+		)
+		(pin "22"
+			(uuid "f400a1d6-e209-4ddf-b41b-dca6b706d532")
+		)
+		(pin "33"
+			(uuid "9c6db855-a11e-4b36-ae89-211884a1b07c")
+		)
+		(pin "34"
+			(uuid "19531b8a-3fa1-431f-bf5d-18be39c7799b")
+		)
+		(pin "36"
+			(uuid "1d1899cb-f8a7-4a7f-b48a-18455208cac7")
+		)
+		(pin "38"
+			(uuid "74da6095-209a-41f9-9ac2-74500721e13e")
+		)
+		(pin "52"
+			(uuid "907274a1-13d0-45ea-b8fe-986a05e801e2")
+		)
+		(pin "50"
+			(uuid "7e7389a7-44fe-4637-9642-701dcb96089e")
+		)
+		(pin "46"
+			(uuid "765cbc08-a389-43ae-b50e-2e04488225e6")
+		)
+		(pin "58"
+			(uuid "07091367-7a90-49be-a702-a8f0e60f2668")
+		)
+		(pin "41"
+			(uuid "f547ec6f-963c-47b4-a929-0dee252cee31")
+		)
+		(pin "59"
+			(uuid "f1eb4e1b-ac58-469a-b431-643b497815a6")
+		)
+		(pin "55"
+			(uuid "93b309d6-02fa-43de-8484-c3e48cb0f9c1")
+		)
+		(pin "60"
+			(uuid "65876deb-3b2d-4172-8d2a-01a4f00be7ff")
+		)
+		(pin "53"
+			(uuid "1de9ed3a-605b-43ce-83ad-92ec08523f4f")
+		)
+		(pin "51"
+			(uuid "c6864758-9fa7-4a7b-a4a0-c6dac1cdff69")
+		)
+		(pin "40"
+			(uuid "412bdee9-9aa8-4e75-8dfd-3860bf649bef")
+		)
+		(pin "43"
+			(uuid "6de9c2a6-2a88-4947-a735-f510e92bdfe8")
+		)
+		(pin "49"
+			(uuid "15e86325-4049-486c-830f-2944a75b7442")
+		)
+		(pin "54"
+			(uuid "22b82a98-0bb2-4126-90c6-0bd7f560f228")
+		)
+		(pin "57"
+			(uuid "e95b90d7-fcd7-46c7-ad3f-ecb903f6c3fd")
+		)
+		(pin "42"
+			(uuid "31c9f897-50fd-4c1a-8fa2-c741c4e4b683")
+		)
+		(pin "61"
+			(uuid "61afdc76-4fd6-40f4-b39f-d293ed0a5881")
+		)
+		(pin "62"
+			(uuid "97369d2b-f701-4e56-8247-61bfbe6a7ff1")
+		)
+		(pin "63"
+			(uuid "df0a7ba8-03a9-449b-b10d-b3c02825cad5")
+		)
+		(pin "48"
+			(uuid "3ef9581f-913e-4e8e-9694-2969890867b5")
+		)
+		(pin "44"
+			(uuid "eeac2d1f-5854-4438-8115-fed36b2f0269")
+		)
+		(pin "45"
+			(uuid "8b066f9e-fee6-4dab-b686-1156862b4d30")
+		)
+		(pin "56"
+			(uuid "358d0bfb-ee34-46e5-aaec-df3f08a9be6b")
+		)
+		(pin "47"
+			(uuid "dd3184a3-d42e-4a92-9c2e-1812dcb3b568")
+		)
+		(pin "64"
+			(uuid "9d1045f2-1e35-4e44-bdcd-369f7e05b1a8")
 		)
 		(instances
 			(project "mec-arm-esc"
 				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/f98c3b84-d266-4f97-b31c-c06302106036"
-					(reference "SW2")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -6520,118 +6696,6 @@
 			(project "mec-arm-esc"
 				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/f98c3b84-d266-4f97-b31c-c06302106036"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "core:NX3225GD-8MHZ-STD-CRA-3")
-		(at 120.65 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f4f94791-aefb-442b-b8b3-9a39fe0997f7")
-		(property "Reference" "X1"
-			(at 120.65 104.394 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NX3225GD-8MHZ-STD-CRA-3"
-			(at 120.904 106.426 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:OSC-SMD_2P-L3.2-W2.5"
-			(at 120.65 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C889706.pdf"
-			(at 120.65 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "8MHzz Oscillator"
-			(at 120.65 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "NDK"
-			(at 120.65 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "NX3225GD-8MHZ-STD-CRA-3"
-			(at 120.65 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C889706"
-			(at 120.65 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6c75216a-4699-4d60-95b2-b89137a3cff2")
-		)
-		(pin "1"
-			(uuid "68d0bcf8-2ea1-439e-8b44-e580702df7c4")
-		)
-		(instances
-			(project "mec-arm-esc"
-				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/f98c3b84-d266-4f97-b31c-c06302106036"
-					(reference "X1")
 					(unit 1)
 				)
 			)

@@ -56,6 +56,53 @@
 		)
 	)
 	(sheet
+		(at 125.73 96.52)
+		(size 43.18 34.29)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 52 128 47 1)
+		)
+		(fill
+			(color 205 255 182 1)
+		)
+		(uuid "e7902643-4f0e-4c62-98f1-e9c44d2c03d3")
+		(property "Sheetname" "peripherals"
+			(at 125.73 95.8084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "peripherals.kicad_sch"
+			(at 125.73 131.3946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mec-arm-esc"
+				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 125.73 38.1)
 		(size 43.18 50.8)
 		(exclude_from_sim no)
@@ -66,9 +113,10 @@
 		(stroke
 			(width 0.1524)
 			(type solid)
+			(color 88 98 173 1)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 151 177 255 1)
 		)
 		(uuid "f98c3b84-d266-4f97-b31c-c06302106036")
 		(property "Sheetname" "mcu"
