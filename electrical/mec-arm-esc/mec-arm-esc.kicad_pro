@@ -639,7 +639,7 @@
         "uuid": "e8c42cac-0e93-4c5c-9b53-7b1f62cb177c"
       }
     ],
-    "used_designators": "U1-4,Q1-7,R1-3,R20-21,X1,SW1-2,USB1,#PWR6,D1",
+    "used_designators": "LED1,C1,C42-48,D1-5,#PWR7-11,#PWR42-62,R4,R22-35,U4-6,CN1,DA2,TP1",
     "variants": []
   },
   "sheets": [
