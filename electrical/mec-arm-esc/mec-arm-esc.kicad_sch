@@ -10,7 +10,7 @@
 	)
 	(lib_symbols)
 	(sheet
-		(at 203.2 38.1)
+		(at 166.37 40.64)
 		(size 41.91 97.79)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26,7 +26,7 @@
 		)
 		(uuid "be25bee3-1195-4ea3-83c3-333a16a4873f")
 		(property "Sheetname" "powerstage"
-			(at 203.2 37.3884 0)
+			(at 166.37 39.9284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37,7 +37,7 @@
 			)
 		)
 		(property "Sheetfile" "powerstage.kicad_sch"
-			(at 203.2 136.4746 0)
+			(at 166.37 139.0146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -56,7 +56,7 @@
 		)
 	)
 	(sheet
-		(at 125.73 96.52)
+		(at 88.9 99.06)
 		(size 43.18 34.29)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -73,7 +73,7 @@
 		)
 		(uuid "e7902643-4f0e-4c62-98f1-e9c44d2c03d3")
 		(property "Sheetname" "peripherals"
-			(at 125.73 95.8084 0)
+			(at 88.9 98.3484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -84,7 +84,7 @@
 			)
 		)
 		(property "Sheetfile" "peripherals.kicad_sch"
-			(at 125.73 131.3946 0)
+			(at 88.9 133.9346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -103,7 +103,7 @@
 		)
 	)
 	(sheet
-		(at 125.73 38.1)
+		(at 88.9 40.64)
 		(size 43.18 50.8)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -120,7 +120,7 @@
 		)
 		(uuid "f98c3b84-d266-4f97-b31c-c06302106036")
 		(property "Sheetname" "mcu"
-			(at 125.73 37.3884 0)
+			(at 88.9 39.9284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -131,7 +131,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 125.73 89.4846 0)
+			(at 88.9 92.0246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
