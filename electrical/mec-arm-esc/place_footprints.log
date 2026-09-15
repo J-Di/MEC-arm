@@ -1,0 +1,47 @@
+09-14 00:05:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 674:Plugin executed on: 'win32'
+09-14 00:05:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 675:Plugin executed with python version: '3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]'
+09-14 00:05:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 676:KiCad build version: 10.0.1
+09-14 00:05:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 677:Plugin version: 5.0.0
+
+09-14 00:05:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 678:Frame repr: <wx._core.Frame object at 0x000001E5DC4F7EB0>
+09-14 00:05:40 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
+09-14 00:05:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 717:Reference footprint='C30'
+09-14 00:05:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 858:Reference designator is: C
+09-14 00:05:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 859:Reference number is: 30
+09-14 00:05:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 891:Sorted and filtered list:
+['C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'C15', 'C16', 'C17', 'C18', 'C19', 'C20', 'C21', 'C22', 'C23', 'C24', 'C25', 'C26', 'C27', 'C28', 'C29', 'C30', 'C31', 'C32', 'C33', 'C34', 'C35', 'C36', 'C37', 'C38', 'C39', 'C40', 'C41', 'C42', 'C43', 'C44', 'C45', 'C46', 'C47', 'C48', 'C49', 'C50', 'C51', 'C52', 'C53', 'C54', 'C55', 'C56', 'C57', 'C58', 'C59', 'C60', 'C61']
+09-14 00:05:44 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 376:wx.Colour(32, 32, 32, 255)
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 507:'20'
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 559:Preparing config for reference circular
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 573:Saving config file
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 575:Saved the config file
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 929:Footprints to place:
+['C30', 'C31', 'C32', 'C33', 'C34', 'C35', 'C36', 'C37', 'C38']
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 359:Starting placing with circular layout
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 369:reference footprint position at: VECTOR2I(187800000, 88500000)
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 374:rotation center at: (187800000, 108500000.0)
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.place_footprints 506:Text of: C30 has property "Keep upright" rotation might not look as intended
+09-14 00:06:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 944:Placing complete

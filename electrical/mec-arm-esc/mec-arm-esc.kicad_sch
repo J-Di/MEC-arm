@@ -57,7 +57,7 @@
 	)
 	(sheet
 		(at 88.9 99.06)
-		(size 43.18 34.29)
+		(size 43.18 39.37)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -84,7 +84,7 @@
 			)
 		)
 		(property "Sheetfile" "peripherals.kicad_sch"
-			(at 88.9 133.9346 0)
+			(at 88.9 139.0146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

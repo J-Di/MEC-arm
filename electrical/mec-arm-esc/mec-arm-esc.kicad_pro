@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 3.8,
+          "width": 4.4
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -475,7 +475,8 @@
       "_mcu",
       "core",
       "connector",
-      "mcu"
+      "mcu",
+      "my_connector"
     ]
   },
   "meta": {
@@ -497,7 +498,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.254,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -675,7 +676,7 @@
         "uuid": "e8c42cac-0e93-4c5c-9b53-7b1f62cb177c"
       }
     ],
-    "used_designators": "Q9,#PWR106-110,U9,LED6,R59-61",
+    "used_designators": "NT1,SW2,J6,J10",
     "variants": []
   },
   "sheets": [
