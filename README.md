@@ -36,11 +36,8 @@ flowchart LR
         I[Joint assembly]
     end
 
-    subgraph Validation[Joint Validation]
-        K[Per-joint gearbox testing]
-        L[Torque characterization]
-    end
-
+    K[Per-joint gearbox testing]
+    L[Torque characterization]
     J[Full arm integration]
     S[Software begins]
 
@@ -65,7 +62,6 @@ flowchart LR
 ```
 
 🟩 Done · 🟨 In progress · ⬜ Planned
-
 
 
 ### Electrical Hardware
