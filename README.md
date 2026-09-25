@@ -16,70 +16,53 @@ Key Specs:
 
 
 ```mermaid
-
 flowchart LR
+    subgraph Shared
+        A[Requirements defined]
+        B[Arm structure decided]
+        C[Joint torque calculations]
+        D[Motors sourced]
+    end
 
-&#x20;   subgraph Shared
+    subgraph Electrical
+        E[ESC design]
+        H[ESC bring-up and testing]
+        P[Power distribution and coordination board]
+    end
 
-&#x20;       A\[Requirements defined] --> B\[Arm structure decided]
+    subgraph Mechanical
+        F[Preliminary arm structure]
+        G[Gearbox design]
+        I[Joint assembly]
+    end
 
-&#x20;       B --> C\[Joint torque calculations]
+    subgraph Validation[Joint Validation]
+        K[Per-joint gearbox testing]
+        L[Torque characterization]
+    end
 
-&#x20;       C --> D\[Motors sourced]
+    J[Full arm integration]
+    S[Software begins]
 
-&#x20;   end
+    A --> B --> C --> D
+    D --> E --> H
+    D --> P
+    D --> F --> G --> I
+    H --> K
+    G --> K
+    K --> L
+    L --> J
+    I --> J
+    P --> J
+    J --> S
 
-
-
-&#x20;   subgraph Electrical
-
-&#x20;       E\[ESC design] --> H\[ESC bring-up \& testing]
-
-&#x20;       P\[Power distribution and coordination board designed]
-
-&#x20;   end
-
-
-
-&#x20;   subgraph Mechanical
-
-&#x20;       F\[Preliminary arm structure] --> G\[Gearbox design]
-
-&#x20;       G --> I\[Joint assembly]
-
-&#x20;   end
-
-
-
-&#x20;   D --> E
-
-&#x20;   D --> F
-
-&#x20;   D --> P
-
-&#x20;   H --> J\[Full arm integration]
-
-&#x20;   I --> J
-
-&#x20;   P --> J
-
-
-
-&#x20;   classDef done fill:#2da44e,stroke:#1a7f37,color:#fff
-
-&#x20;   classDef wip  fill:#d4a72c,stroke:#9a6700,color:#fff
-
-&#x20;   classDef todo fill:#f6f8fa,stroke:#8c959f,color:#57606a
-
-&#x20;   class A,B,C,D,F done
-
-&#x20;   class E,G,P wip
-
-&#x20;   class H,I,J todo
-
+    classDef done fill:#2da44e,stroke:#1a7f37,color:#fff
+    classDef wip  fill:#d4a72c,stroke:#9a6700,color:#fff
+    classDef todo fill:#8c959f,stroke:#57606a,color:#fff
+    class A,B,C,D,F done
+    class E,G,P wip
+    class H,I,J,K,L,S todo
 ```
-
-
 
 🟩 Done · 🟨 In progress · ⬜ Planned
 
