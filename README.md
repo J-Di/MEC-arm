@@ -1,17 +1,42 @@
-### Overview
 
-MEC-Arm is a six degree of freedom robotic arm which is currently being designed from scratch by a 2 member team. The team is composed of a mechanical and electrical engineering student, working together to realize this personal project. The overall objective is to create a fully functional, precise, and practical arm, while creating many of the required components from scratch along the way. This repository contains both the mechanical and the electrical side of the project, after all, this is a **M**echanical **E**lectrical **C**ollaboration -Arm :)
+<h1>MEC-Arm</h1>
 
-Key Specs:
+<table>
+<tr>
+<td>
 
-* 6 DOF arm
-* 60cm reach
-* 1 kg payload
-* Battery powered
+## Overview
+MEC-Arm is a six degree of freedom robotic arm which is currently being designed from scratch by 2 students team. The team is composed of a mechanical and electrical engineering student, working together to realize this shared personal project. The overall objective is to create a fully functional, precise, and practical arm, while creating many of the required components from scratch along the way. This repository contains both the mechanical and the electrical side of the project, after all, this is a **M**echanical **E**lectrical **C**ollaboration -Arm :)
 
+### Key Features:
 
+#### Arm
+- Joint layout: waist (roll), shoulder (pitch), elbow (pitch), 3-axis wrist (roll, pitch, roll)
+- Arm weight: TBD
+- End effector: gripper, driven by the 7th motor
+- Max joint speed: 90 RPM (shoulder)
 
-### Timeline
+#### Actuation
+
+- Actuators: 7× brushless motors with custom cycloidal gearboxes
+- Gear ratios: 19:1, 25:1, 15:1
+- Motor control: FOC at every joint
+- Position feedback: on-board magnetic encoders
+
+#### Power & control
+
+- Battery: 6S LiPo, 25.2–18V, TBD mA
+- Communication: CAN bus 
+- Host: controlled from a raspberry pi
+
+</td>
+<td width="30%" align="center">
+  <img src="Admin/MEC_Logo.svg" alt="MEC-Arm logo" height="500">
+</td>
+</tr>
+</table>
+
+## Timeline
 
 
 
@@ -64,13 +89,11 @@ flowchart LR
 🟩 Done · 🟨 In progress · ⬜ Planned
 
 
-### Electrical Hardware
+## Electrical Hardware
 
 The electrical hardware of this project is responsible to bring the arm to life, providing a way to reliably control the joints, and keep the whole system powered on and safe to use. The current MEC-arm design is expecting to use 7 brushless motors (varying depending on the joint), so the first element which is being worked on is a custom PCB capable of driving BLDCs. The other piece of electrical hardware which is being worked on is a general power distribution / converter board, which will be responsibel for ensuring all of the systems are properly being distributed their power correctly, and offers a main hub to connect the PC to all of the other electronics.
 
-
-
-#### Electric Speed Controller (ESC)
+### Electric Speed Controller (ESC)
 
 The ESCs will play a critical role on the arm, being responsible for controlling all of the arm joints. The approach I want to take for these ESCs is to have them mounted behind the motors that they will be controlling. This is benefitial in many ways (both electrically and practically), but the main motivators for me is so that I can use a magnetic encoder on the motors input shaft (removing the necessity to couple an external encoder to the motor shaft), and this eliminates the nasty wiring which comes with externally mounted ESCs. The decision to use brushless motors was made so that we can extract as much torque as possible in a very small volume, and so we can take advantage of interesting control strategies such as FOC. With that said, here are the requirements for the ESC:
 
