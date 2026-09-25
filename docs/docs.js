@@ -42,7 +42,7 @@ const chain = [];
 for (let node = pageMap.get(currentId); node; node = pageMap.get(node.parent)) chain.unshift(node);
 
 document.getElementById("site-header").innerHTML = `<div class="container nav-wrap">
-  <a class="brand" href="${href('index.html')}" aria-label="MEC-Arm home"><span class="brand-mark">M<span class="brand-red">/</span>EC</span><span class="brand-sub">ARM PROJECT</span></a>
+  <a class="brand" href="${href('index.html')}" aria-label="MEC-Arm home"><img class="brand-logo" src="${href('assets/MEC_Logo.svg')}" alt="" width="38" height="50"></a>
   <nav aria-label="Main navigation"><a href="${href('index.html')}">Overview</a><a href="${href('electrical/')}">Electrical</a><a href="${href('mechanical/')}">Mechanical</a><a href="${href('software/')}">Software</a></nav>
   <a class="nav-github" id="repo-nav" href="#repository">GitHub ↗</a></div>`;
 
@@ -56,7 +56,7 @@ function renderTree(parent, depth = 0) {
 }
 document.getElementById("docs-sidebar").innerHTML = `<p class="sidebar-label">PROJECT MAP</p><a class="sidebar-home" href="${href('index.html')}">← Project overview</a><ul class="side-tree">${renderTree(undefined)}</ul>`;
 document.getElementById("breadcrumbs").innerHTML = `<a href="${href('index.html')}">MEC-Arm</a>${chain.map((node, index) => `<span aria-hidden="true">/</span>${index === chain.length - 1 ? `<span aria-current="page">${node.label}</span>` : `<a href="${href(node.path)}">${node.label}</a>`}`).join("")}`;
-document.getElementById("site-footer").innerHTML = `<div class="container footer-inner"><div><strong>M<span>/</span>EC ARM</strong><p>Mechanical × Electrical Collaboration</p></div><p><a href="${href('index.html')}">Project overview ↑</a></p></div>`;
+document.getElementById("site-footer").innerHTML = `<div class="container footer-inner"><div class="footer-brand"><img class="footer-logo" src="${href('assets/MEC_Logo.svg')}" alt="MEC-Arm logo" width="29" height="39"><div><strong>MEC-Arm</strong><p>Mechanical × Electrical Collaboration</p></div></div><p><a href="${href('index.html')}">Project overview ↑</a></p></div>`;
 
 /* Standard project Pages URLs are OWNER.github.io/REPOSITORY/.
    Set repoUrl if you use a custom domain. */

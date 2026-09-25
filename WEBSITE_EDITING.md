@@ -12,7 +12,7 @@ The website is plain HTML, CSS, and JavaScript in the repository's `docs/` folde
 | `docs/mechanical/` | Structure, gearbox, joint, and gripper pages. |
 | `docs/software/` | Host, motion, and testing-tool pages. |
 | `docs/docs.js` | Shared header, sidebar, breadcrumbs, and the list of project pages (`sitePages`). |
-| `docs/assets/MEC_Logo.svg` | The logo in the header icon and homepage. |
+| `docs/assets/MEC_Logo.svg` | The supplied logo used in the header, footer, homepage, and favicon. |
 
 Each documentation topic is a real `.html` file. For example, the ESC sensing page is `docs/electrical/hardware/esc/feedback.html`. A folder's landing page is its `index.html`, such as `docs/electrical/hardware/esc/index.html`.
 
