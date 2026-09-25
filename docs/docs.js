@@ -60,7 +60,7 @@ document.getElementById("site-footer").innerHTML = `<div class="container footer
 
 /* Standard project Pages URLs are OWNER.github.io/REPOSITORY/.
    Set repoUrl if you use a custom domain. */
-const repoUrl = "";
+const repoUrl = "https://github.com/J-Di/MEC-arm";
 const host = window.location.hostname;
 const repoName = window.location.pathname.split("/").filter(Boolean)[0];
 const owner = host.endsWith(".github.io") ? host.slice(0, -".github.io".length) : "";
