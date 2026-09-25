@@ -15,7 +15,7 @@
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="MEC-Arm home"><span class="brand-mark">M<span class="brand-red">/</span>EC</span><span class="brand-sub">ARM PROJECT</span></a>
       <nav aria-label="Main navigation">
-        <a href="#about">About</a><a href="#design">Design</a><a href="#progress">Progress</a><a href="#hardware">Hardware</a>
+        <a href="#about">Overview</a><a href="electrical/">Electrical</a><a href="mechanical/">Mechanical</a><a href="software/">Software</a>
       </nav>
       <a class="nav-github" id="repo-nav" href="#repository">GitHub <span aria-hidden="true">↗</span></a>
     </div>
@@ -28,7 +28,7 @@
           <p class="eyebrow"><span class="red-line"></span> A mechanical × electrical collaboration</p>
           <h1 id="hero-title">Building an arm<br>from the <em>joint up.</em></h1>
           <p class="hero-intro">A six degree of freedom robotic arm designed from scratch by two engineering students. We’re bringing mechanics, electronics, and control together, one subsystem at a time.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#design">Explore the design <span aria-hidden="true">↗</span></a><a class="text-link" href="#progress">See our progress <span aria-hidden="true">↓</span></a></div>
+          <div class="hero-actions"><a class="button button-primary" href="#explore">Explore the project <span aria-hidden="true">↗</span></a><a class="text-link" href="#progress">See our progress <span aria-hidden="true">↓</span></a></div>
           <div class="hero-meta"><span><b>06</b> degrees of freedom</span><span><b>07</b> brushless motors</span><span><b>02</b> student builders</span></div>
         </div>
         <div class="hero-visual" aria-label="MEC-Arm project logo">
@@ -46,9 +46,18 @@
       </div>
     </section>
 
+    <section class="section disciplines" id="explore" aria-labelledby="explore-title"><div class="container">
+      <div class="section-heading"><div><p class="section-kicker">02 / EXPLORE THE PROJECT</p><h2 id="explore-title">Pick a discipline.</h2></div><p>Each area has its own pages, from system overview down to individual designs.</p></div>
+      <div class="hub-grid">
+        <a class="hub-card" href="electrical/"><span class="hub-index">01 / ELECTRICAL</span><h3>Electrical<span aria-hidden="true">↗</span></h3><p>Joint controllers, power distribution, firmware, sensing, and communication.</p><small>Hardware / Firmware</small></a>
+        <a class="hub-card" href="mechanical/"><span class="hub-index">02 / MECHANICAL</span><h3>Mechanical<span aria-hidden="true">↗</span></h3><p>Arm structure, joints, cycloidal gearboxes, and the gripper.</p><small>Structure / Actuation</small></a>
+        <a class="hub-card" href="software/"><span class="hub-index">03 / SOFTWARE</span><h3>Software<span aria-hidden="true">↗</span></h3><p>The Raspberry Pi host, motion planning, and tools as they take shape.</p><small>Host / Motion / Tools</small></a>
+      </div>
+    </div></section>
+
     <section class="section design" id="design" aria-labelledby="design-title">
       <div class="container">
-        <div class="section-heading"><div><p class="section-kicker">02 / SYSTEM DESIGN</p><h2 id="design-title">Inside the arm.</h2></div><p>From motion at the joint to commands from the host.</p></div>
+        <div class="section-heading"><div><p class="section-kicker">03 / SYSTEM DESIGN</p><h2 id="design-title">Inside the arm.</h2></div><p>From motion at the joint to commands from the host.</p></div>
         <div class="cards">
           <article class="card"><div class="card-top"><span class="card-number">01</span><span class="card-icon" aria-hidden="true">◎</span></div><h3>Motion</h3><p>Waist roll, shoulder pitch, elbow pitch, and a three axis roll–pitch–roll wrist. A motor driven gripper adds the end effector.</p><div class="card-foot">6 axes + gripper</div></article>
           <article class="card"><div class="card-top"><span class="card-number">02</span><span class="card-icon" aria-hidden="true">⌁</span></div><h3>Actuation</h3><p>Seven brushless motors are planned with custom cycloidal gearboxes. Current gearbox ratio targets include 19:1, 25:1, and 15:1.</p><div class="card-foot">Custom joint drives</div></article>
@@ -60,7 +69,7 @@
     </section>
 
     <section class="section progress" id="progress" aria-labelledby="progress-title">
-      <div class="container"><div class="section-heading"><div><p class="section-kicker">03 / BUILD PROGRESS</p><h2 id="progress-title">Where we are.</h2></div><p>Milestones based on our current project plan.</p></div>
+      <div class="container"><div class="section-heading"><div><p class="section-kicker">04 / BUILD PROGRESS</p><h2 id="progress-title">Where we are.</h2></div><p>Milestones based on our current project plan.</p></div>
         <div class="progress-grid">
           <div class="progress-column done"><div class="progress-head"><span class="status-dot"></span><h3>Completed</h3><span class="count">05</span></div><ol><li>Requirements defined</li><li>Arm structure decided</li><li>Joint torque calculations</li><li>Motors sourced</li><li>Preliminary arm structure</li></ol></div>
           <div class="progress-column active"><div class="progress-head"><span class="status-dot"></span><h3>In progress</h3><span class="count">03</span></div><ol><li>ESC design</li><li>Power distribution and coordination board</li><li>Gearbox design</li></ol></div>
@@ -71,7 +80,7 @@
     </section>
 
     <section class="section hardware" id="hardware" aria-labelledby="hardware-title"><div class="container hardware-grid">
-      <div><p class="section-kicker">04 / ELECTRICAL HARDWARE</p><h2 id="hardware-title">Control, close<br>to the motor.</h2><p class="hardware-lead">Our custom ESC is intended to mount behind each motor. That places magnetic encoder feedback at the motor shaft and keeps joint wiring compact.</p><p>The board is being designed as a reusable controller across the arm’s joints, paired with a separate power distribution and coordination board.</p></div>
+      <div><p class="section-kicker">05 / ELECTRICAL HARDWARE</p><h2 id="hardware-title">Control, close<br>to the motor.</h2><p class="hardware-lead">Our custom ESC is intended to mount behind each motor. That places magnetic encoder feedback at the motor shaft and keeps joint wiring compact.</p><p>The board is being designed as a reusable controller across the arm’s joints, paired with a separate power distribution and coordination board.</p><a class="text-link" href="electrical/hardware/esc/">Explore the ESC design ↗</a></div>
       <div class="requirements"><div class="requirements-title"><span>ESC / DESIGN GOALS</span><span>IN PROGRESS</span></div><ul><li><span>01</span>Compact enough to fit behind the motor</li><li><span>02</span>Field oriented motor control</li><li><span>03</span>Smooth low speed position control</li><li><span>04</span>Magnetic encoder feedback</li><li><span>05</span>Reusable across different joints</li><li><span>06</span>Overcurrent, voltage, and temperature protection</li></ul></div>
     </div></section>
 
