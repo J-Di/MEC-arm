@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f5">
+  <meta name="description" content="MEC-Arm is a six degree of freedom robotic arm designed by two students across mechanical and electrical engineering.">
+  <title>MEC-Arm — Mechanical × Electrical</title>
+  <link rel="icon" href="assets/MEC_Logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="MEC-Arm home"><span class="brand-mark">M<span class="brand-red">/</span>EC</span><span class="brand-sub">ARM PROJECT</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#design">Design</a><a href="#progress">Progress</a><a href="#hardware">Hardware</a>
+      </nav>
+      <a class="nav-github" id="repo-nav" href="#repository">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="red-line"></span> A mechanical × electrical collaboration</p>
+          <h1 id="hero-title">Building an arm<br>from the <em>joint up.</em></h1>
+          <p class="hero-intro">A six degree of freedom robotic arm designed from scratch by two engineering students. We’re bringing mechanics, electronics, and control together, one subsystem at a time.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#design">Explore the design <span aria-hidden="true">↗</span></a><a class="text-link" href="#progress">See our progress <span aria-hidden="true">↓</span></a></div>
+          <div class="hero-meta"><span><b>06</b> degrees of freedom</span><span><b>07</b> brushless motors</span><span><b>02</b> student builders</span></div>
+        </div>
+        <div class="hero-visual" aria-label="MEC-Arm project logo">
+          <div class="visual-grid"></div><span class="visual-corner corner-a">MEC / 001</span><span class="visual-corner corner-b">DESIGN IN PROGRESS</span>
+          <div class="logo-stage"><img src="assets/MEC_Logo.svg" alt="MEC-Arm logo" width="300" height="400"></div>
+          <span class="visual-axis axis-x">X</span><span class="visual-axis axis-y">Y</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container section-grid">
+        <div><p class="section-kicker">01 / THE PROJECT</p><h2 id="about-title">Two disciplines.<br>One machine.</h2></div>
+        <div class="section-body"><p class="lead">MEC stands for <strong>Mechanical Electrical Collaboration.</strong> It is the idea behind the arm and the way we’re building it.</p><p>Our goal is a functional, precise, practical robotic arm. We’re designing core mechanical and electrical components ourselves, then testing how they work together as a complete system.</p><p class="muted">The project is in development. Specifications and progress below reflect the current design, not a finished product.</p></div>
+      </div>
+    </section>
+
+    <section class="section design" id="design" aria-labelledby="design-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-kicker">02 / SYSTEM DESIGN</p><h2 id="design-title">Inside the arm.</h2></div><p>From motion at the joint to commands from the host.</p></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><span class="card-number">01</span><span class="card-icon" aria-hidden="true">◎</span></div><h3>Motion</h3><p>Waist roll, shoulder pitch, elbow pitch, and a three axis roll–pitch–roll wrist. A motor driven gripper adds the end effector.</p><div class="card-foot">6 axes + gripper</div></article>
+          <article class="card"><div class="card-top"><span class="card-number">02</span><span class="card-icon" aria-hidden="true">⌁</span></div><h3>Actuation</h3><p>Seven brushless motors are planned with custom cycloidal gearboxes. Current gearbox ratio targets include 19:1, 25:1, and 15:1.</p><div class="card-foot">Custom joint drives</div></article>
+          <article class="card"><div class="card-top"><span class="card-number">03</span><span class="card-icon" aria-hidden="true">◇</span></div><h3>Control</h3><p>Field oriented control at each joint, on board magnetic encoder feedback, CAN communication, and a Raspberry Pi host.</p><div class="card-foot">Distributed control</div></article>
+          <article class="card"><div class="card-top"><span class="card-number">04</span><span class="card-icon" aria-hidden="true">↯</span></div><h3>Power</h3><p>A 6S LiPo supply and a planned power distribution and coordination board will provide a central connection point for the system.</p><div class="card-foot">18–25.2 V battery range</div></article>
+        </div>
+        <div class="spec-strip" aria-label="Selected design targets"><div><span>Joint speed target</span><strong>90 RPM</strong><small>shoulder</small></div><div><span>Feedback</span><strong>Magnetic</strong><small>on motor shaft</small></div><div><span>Joint network</span><strong>CAN bus</strong><small>distributed electronics</small></div></div>
+      </div>
+    </section>
+
+    <section class="section progress" id="progress" aria-labelledby="progress-title">
+      <div class="container"><div class="section-heading"><div><p class="section-kicker">03 / BUILD PROGRESS</p><h2 id="progress-title">Where we are.</h2></div><p>Milestones based on our current project plan.</p></div>
+        <div class="progress-grid">
+          <div class="progress-column done"><div class="progress-head"><span class="status-dot"></span><h3>Completed</h3><span class="count">05</span></div><ol><li>Requirements defined</li><li>Arm structure decided</li><li>Joint torque calculations</li><li>Motors sourced</li><li>Preliminary arm structure</li></ol></div>
+          <div class="progress-column active"><div class="progress-head"><span class="status-dot"></span><h3>In progress</h3><span class="count">03</span></div><ol><li>ESC design</li><li>Power distribution and coordination board</li><li>Gearbox design</li></ol></div>
+          <div class="progress-column planned"><div class="progress-head"><span class="status-dot"></span><h3>Up next</h3><span class="count">06</span></div><ol><li>ESC bring-up and testing</li><li>Joint assembly</li><li>Per-joint gearbox testing</li><li>Torque characterization</li><li>Full arm integration</li><li>Software development</li></ol></div>
+        </div>
+        <p class="progress-note">These workstreams overlap; the columns show status rather than a strict sequence.</p>
+      </div>
+    </section>
+
+    <section class="section hardware" id="hardware" aria-labelledby="hardware-title"><div class="container hardware-grid">
+      <div><p class="section-kicker">04 / ELECTRICAL HARDWARE</p><h2 id="hardware-title">Control, close<br>to the motor.</h2><p class="hardware-lead">Our custom ESC is intended to mount behind each motor. That places magnetic encoder feedback at the motor shaft and keeps joint wiring compact.</p><p>The board is being designed as a reusable controller across the arm’s joints, paired with a separate power distribution and coordination board.</p></div>
+      <div class="requirements"><div class="requirements-title"><span>ESC / DESIGN GOALS</span><span>IN PROGRESS</span></div><ul><li><span>01</span>Compact enough to fit behind the motor</li><li><span>02</span>Field oriented motor control</li><li><span>03</span>Smooth low speed position control</li><li><span>04</span>Magnetic encoder feedback</li><li><span>05</span>Reusable across different joints</li><li><span>06</span>Overcurrent, voltage, and temperature protection</li></ul></div>
+    </div></section>
+
+    <section class="section follow" id="repository" aria-labelledby="follow-title"><div class="container follow-panel"><div><p class="section-kicker">FOLLOW THE BUILD</p><h2 id="follow-title">An ongoing project,<br>built in the open.</h2><p>Mechanical design, electronics, tests, and integration will evolve as we build. Follow the repository for the latest work.</p></div><a class="button button-light" id="repo-cta" href="#repository">View the repository <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><div class="container footer-inner"><div><strong>M<span>/</span>EC ARM</strong><p>Mechanical × Electrical Collaboration</p></div><p>Designed by two engineering students. <a href="#top">Back to top ↑</a></p></div></footer>
+  <script src="site.js" defer></script>
+</body>
+</html>
