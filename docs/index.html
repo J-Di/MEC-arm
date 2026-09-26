@@ -50,23 +50,23 @@
     <section class="status-band" id="status" aria-labelledby="status-title">
       <div class="container">
         <div class="band-heading">
-          <h2 id="status-title">Project status</h2>
+          <h2 id="status-title">Timeline</h2>
           <p>Update these lists as milestones change.</p>
         </div>
-        <div class="status-grid">
-          <div class="status-group">
-            <h3><span class="status-dot done"></span>Completed</h3>
+        <ol class="status-grid" aria-label="Project milestones">
+          <li class="status-group">
+            <h3><span class="status-dot done" aria-hidden="true"></span>Completed</h3>
             <ul><li>Requirements defined</li><li>Joint torque calculations</li><li>Motors sourced</li></ul>
-          </div>
-          <div class="status-group">
-            <h3><span class="status-dot active"></span>In progress</h3>
+          </li>
+          <li class="status-group">
+            <h3><span class="status-dot active" aria-hidden="true"></span>In progress</h3>
             <ul><li>ESC design</li><li>Gearbox design</li><li>Power board design</li></ul>
-          </div>
-          <div class="status-group">
-            <h3><span class="status-dot planned"></span>Planned</h3>
+          </li>
+          <li class="status-group">
+            <h3><span class="status-dot planned" aria-hidden="true"></span>Planned</h3>
             <ul><li>Controller bring-up</li><li>Joint testing</li><li>Full arm integration</li></ul>
-          </div>
-        </div>
+          </li>
+        </ol>
       </div>
     </section>
 
