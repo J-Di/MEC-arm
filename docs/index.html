@@ -7,7 +7,8 @@
   <meta name="description" content="MEC-Arm project documentation: electrical, mechanical, and software design notes for a six degree of freedom robotic arm.">
   <title>MEC-Arm | Project documentation</title>
   <link rel="icon" href="assets/MEC_Logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="gallery.js" defer></script>
 </head>
 <body class="home-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -54,32 +55,67 @@
         <p>Current design targets; specifications may change as the arm develops.</p>
       </div>
 
-      <div class="goals-grid">
-        <div class="goal">
-          <h3>Arm</h3>
-          <ul>
-            <li>Six degrees of freedom: waist, shoulder, elbow, and three-axis wrist</li>
-            <li>Gripper driven by a seventh motor</li>
-            <li>Precise, practical desktop-scale operation</li>
-          </ul>
+      <div class="goals-layout">
+        <div class="goals-grid">
+          <div class="goal">
+            <h3>Arm</h3>
+            <ul>
+              <li>Six degrees of freedom: waist, shoulder, elbow, and three-axis wrist</li>
+              <li>Gripper driven by a seventh motor</li>
+              <li>Precise, practical desktop-scale operation</li>
+            </ul>
+          </div>
+
+          <div class="goal">
+            <h3>Actuation</h3>
+            <ul>
+              <li>Seven brushless motors with custom cycloidal gearboxes</li>
+              <li>Field-oriented control at each joint</li>
+              <li>Magnetic encoder feedback for position control</li>
+            </ul>
+          </div>
+
+          <div class="goal">
+            <h3>Power &amp; control</h3>
+            <ul>
+              <li>Battery-powered system</li>
+              <li>CAN bus communication between controllers</li>
+              <li>Raspberry Pi as the host computer</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="goal">
-          <h3>Actuation</h3>
-          <ul>
-            <li>Seven brushless motors with custom cycloidal gearboxes</li>
-            <li>Field-oriented control at each joint</li>
-            <li>Magnetic encoder feedback for position control</li>
-          </ul>
-        </div>
-
-        <div class="goal">
-          <h3>Power &amp; control</h3>
-          <ul>
-            <li>Battery-powered system</li>
-            <li>CAN bus communication between controllers</li>
-            <li>Raspberry Pi as the host computer</li>
-          </ul>
+        <div class="project-gallery" aria-label="Project image gallery">
+          <div class="gallery-window">
+            <!-- Replace each placeholder image path with your own photo or render. -->
+            <figure class="gallery-slide">
+              <img src="assets/gallery-placeholder.svg" alt="Placeholder for a photo or render of the robotic arm" width="700" height="850">
+              <figcaption>Arm <span>Photo or render coming soon</span></figcaption>
+            </figure>
+            <figure class="gallery-slide" hidden>
+              <img src="assets/gallery-placeholder.svg" alt="Placeholder for a photo of the ESC board" width="700" height="850" loading="lazy">
+              <figcaption>ESC board <span>Photo coming soon</span></figcaption>
+            </figure>
+            <figure class="gallery-slide" hidden>
+              <img src="assets/gallery-placeholder.svg" alt="Placeholder for a photo of the gearbox" width="700" height="850" loading="lazy">
+              <figcaption>Gearbox <span>Photo or render coming soon</span></figcaption>
+            </figure>
+            <figure class="gallery-slide" hidden>
+              <img src="assets/gallery-placeholder.svg" alt="Placeholder for an assembly or testing photo" width="700" height="850" loading="lazy">
+              <figcaption>Assembly &amp; testing <span>Photo coming soon</span></figcaption>
+            </figure>
+            <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous image">‹</button>
+            <button class="gallery-arrow gallery-next" type="button" aria-label="Next image">›</button>
+          </div>
+          <div class="gallery-controls" aria-label="Choose an image">
+            <span class="gallery-count" aria-live="polite">01 / 04</span>
+            <div class="gallery-dots">
+              <button type="button" class="gallery-dot" aria-label="Show arm image" aria-current="true"></button>
+              <button type="button" class="gallery-dot" aria-label="Show ESC board image"></button>
+              <button type="button" class="gallery-dot" aria-label="Show gearbox image"></button>
+              <button type="button" class="gallery-dot" aria-label="Show assembly image"></button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

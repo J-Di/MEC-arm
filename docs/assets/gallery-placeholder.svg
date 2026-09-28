@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 850" role="img" aria-labelledby="title description">
+  <title id="title">Project photo placeholder</title>
+  <desc id="description">A simple outlined image frame for future project photos and renders.</desc>
+  <rect width="700" height="850" fill="#eef0f2"/>
+  <path d="M0 170H700M0 340H700M0 510H700M0 680H700M175 0V850M350 0V850M525 0V850" fill="none" stroke="#e2e5e8" stroke-width="1"/>
+  <rect x="157" y="274" width="386" height="302" fill="#f8f9fa" stroke="#b8c0c7" stroke-width="2"/>
+  <path d="M206 504l92-95 74 70 61-54 61 79H206Z" fill="none" stroke="#a51e2d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="441" cy="353" r="22" fill="none" stroke="#a51e2d" stroke-width="4"/>
+  <path d="M270 615h160" stroke="#b8c0c7" stroke-width="2"/>
+  <text x="350" y="651" fill="#626a72" font-family="Arial, sans-serif" font-size="17" letter-spacing="2" text-anchor="middle">ADD PROJECT IMAGE</text>
+</svg>

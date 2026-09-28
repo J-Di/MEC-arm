@@ -81,7 +81,8 @@ footer { border-top: 1px solid var(--line); background: var(--paper); padding: 2
 .goals-heading {margin-bottom: 20px;}
 .goals-heading h2 {margin: 0 0 4px;font-size: 24px;letter-spacing: -.02em;}
 .goals-heading p {margin: 0;color: var(--muted);font-size: 13px;}
-.goals-grid {display: grid;grid-template-columns: repeat(3, minmax(0, 1fr));gap: 28px;}
+.goals-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: stretch; gap: clamp(30px, 5vw, 64px); }
+.goals-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
 .goal {
   border-top: 2px solid var(--red);
   padding-top: 15px;
@@ -99,11 +100,26 @@ footer { border-top: 1px solid var(--line); background: var(--paper); padding: 2
 .goal li + li {
   margin-top: 6px;
 }
-@media (max-width: 700px) {
-  .goals-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
+.project-gallery { display: flex; flex-direction: column; min-width: 0; }
+.gallery-window { position: relative; flex: 1; min-height: 470px; overflow: hidden; border: 1px solid var(--line); background: var(--gray-panel); }
+.gallery-slide { position: absolute; inset: 0; display: block; margin: 0; }
+.gallery-slide[hidden] { display: none; }
+.gallery-slide img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-slide figcaption { position: absolute; right: 0; bottom: 0; left: 0; display: flex; justify-content: space-between; align-items: baseline; gap: 14px; padding: 14px 18px; background: rgba(250, 250, 250, .96); font-size: 14px; font-weight: 700; }
+.gallery-slide figcaption span { color: var(--muted); font-size: 12px; font-weight: 400; }
+.gallery-arrow { position: absolute; top: 50%; width: 38px; height: 42px; transform: translateY(-50%); border: 1px solid var(--line); background: rgba(255, 255, 255, .94); color: var(--ink); font: inherit; font-size: 28px; line-height: 1; cursor: pointer; }
+.gallery-arrow:hover { color: var(--red); border-color: var(--red); }
+.gallery-prev { left: 12px; }
+.gallery-next { right: 12px; }
+.gallery-controls { display: flex; justify-content: space-between; align-items: center; min-height: 38px; gap: 16px; }
+.gallery-count { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.gallery-dots { display: flex; align-items: center; gap: 8px; }
+.gallery-dot { width: 12px; height: 12px; padding: 0; border: 1px solid #8e969e; border-radius: 50%; background: transparent; cursor: pointer; }
+.gallery-dot[aria-current="true"] { border-color: var(--red); background: var(--red); }
+.gallery-dot:hover { border-color: var(--red); }
+@media (max-width: 850px) {
+  .goals-layout { grid-template-columns: 1fr; gap: 30px; }
+  .gallery-window { flex: none; height: min(70vw, 470px); min-height: 340px; }
 }
 
 .documentation { padding: 43px 0 62px; background: var(--gray-panel); }

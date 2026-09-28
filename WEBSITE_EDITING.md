@@ -6,12 +6,14 @@ The website is plain HTML, CSS, and JavaScript in the repository's `docs/` folde
 
 | File or folder | Edit it to change… |
 | --- | --- |
-| `docs/index.html` | The compact homepage text, project status lists, and the three documentation cards. |
+| `docs/index.html` | The homepage text, project goals, image gallery, timeline lists, and documentation cards. |
 | `docs/styles.css` | Colors, spacing, type, cards, sidebar, and mobile layout. Sitewide color variables are at the top. |
 | `docs/electrical/` | Electrical landing page, hardware boards and subsystems, and firmware pages. |
 | `docs/mechanical/` | Structure, gearbox, joint, and gripper pages. |
 | `docs/software/` | Host, motion, and testing-tool pages. |
 | `docs/docs.js` | Shared header, sidebar, breadcrumbs, and the list of project pages (`sitePages`). |
+| `docs/gallery.js` | Previous, next, and slide selection for the homepage gallery. |
+| `docs/assets/gallery-placeholder.svg` | Temporary image shown until you add project photos. |
 | `docs/assets/MEC_Logo.svg` | The supplied logo used in the header, footer, homepage, and favicon. |
 
 Each documentation topic is a real `.html` file. For example, the ESC sensing page is `docs/electrical/hardware/esc/feedback.html`. A folder's landing page is its `index.html`, such as `docs/electrical/hardware/esc/index.html`.
@@ -25,6 +27,10 @@ On the homepage, edit the introductory paragraphs, the three lists in `<section 
 The homepage's GitHub link is directly in `docs/index.html`. The GitHub link on documentation pages is set by `repoUrl` near the bottom of `docs/docs.js`.
 
 To add an image, place it in `docs/assets/` and use a relative path from the page. From `docs/index.html` that looks like `<img src="assets/photo.jpg" alt="A description">`. From `docs/electrical/index.html`, use `../assets/photo.jpg`.
+
+### Replace homepage gallery images
+
+The four `<figure class="gallery-slide">` blocks in `docs/index.html` are the arm, ESC board, gearbox, and assembly slides. Place your photos in `docs/assets/`, then change each slide's `<img src="assets/gallery-placeholder.svg">` to its photo path (for example, `src="assets/arm.jpg"`). Update the image's `alt` text and the `<figcaption>` as well. The placeholder is reused for now; it is not a drawing of the actual arm. The previous/next arrows and four dots work without any changes to `gallery.js`.
 
 ## Add a new topic page
 
