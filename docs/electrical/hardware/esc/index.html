@@ -15,9 +15,35 @@
     <aside class="docs-sidebar" id="docs-sidebar" aria-label="Project sections"></aside>
     <main class="docs-content" id="main">
       <nav class="breadcrumbs" id="breadcrumbs" aria-label="Breadcrumb"></nav>
-      <div class="docs-titlebar"><p class="section-kicker">MEC-ARM / PROJECT DOCUMENTATION</p><span class="status-pill">Design in progress</span><h1>Joint ESC</h1><p class="docs-lead">A compact brushless motor controller intended to live behind each joint motor and support smooth low speed position control.</p></div>
-      <section class="topic-section" aria-labelledby="explore-title"><h2 id="explore-title">Explore this area</h2><div class="topic-grid"><a class="topic-card" href="../../../electrical/hardware/esc/motor-drive.html"><span class="topic-arrow" aria-hidden="true">↗</span><strong>Motor drive</strong><span>Inverter and motor interface</span></a><a class="topic-card" href="../../../electrical/hardware/esc/feedback.html"><span class="topic-arrow" aria-hidden="true">↗</span><strong>Sensing &amp; feedback</strong><span>Encoder and measurements</span></a><a class="topic-card" href="../../../electrical/hardware/esc/protection.html"><span class="topic-arrow" aria-hidden="true">↗</span><strong>Protection</strong><span>Fault handling and monitoring</span></a><a class="topic-card" href="../../../electrical/hardware/esc/communication.html"><span class="topic-arrow" aria-hidden="true">↗</span><strong>Communication</strong><span>Joint network interface</span></a></div></section>
-      <section class="topic-section"><h2>Why mount it at the motor?</h2><p>Locating the ESC at the motor simplifies joint wiring and lets the controller sense a magnetic encoder at the input shaft. One general controller design can then be reused across the arm&#x27;s seven motors.</p></section><section class="topic-section"><h2>Current design goals</h2><p>The board is being designed for field oriented control, magnetic position feedback, and protection against overcurrent, voltage faults, and excess temperature. Bring-up and testing are future milestones; performance is not yet characterized.</p></section>
+      <div class="docs-titlebar"><p class="section-kicker">MEC-ARM / PROJECT DOCUMENTATION</p><span class="status-pill">Design in progress</span><h1>Joint ESC</h1>
+        
+        <p class="docs-lead">The ESCs will play a critical role on the arm, being responsible for controlling all of the arm joints. The approach I want to take for these ESCs is to have them mounted behind the motors that they will be controlling.
+           This is benefitial in many ways (both electrically and practically), but the main motivators for me is so that I can use a magnetic encoder on the motors input shaft (removing the necessity to couple an external encoder to the motor shaft), 
+           and this eliminates the nasty wiring which comes with externally mounted ESCs. The decision to use brushless motors was made so that we can extract as much torque as possible in a very small volume, and so we can take advantage of interesting 
+           control strategies such as FOC.          
+          </p>
+        
+          <p> High Level Goals: </p>
+
+      <ul>
+        <li>Compact driver must fit behind motor for each joint</li>
+        <li>Must be able to run FOC</li>
+        <li>Achieve smooth low speed position control with magnetic encoder feedback</li>
+        <li>Generic use across all arm joints</li>
+        <li>Protected against overcurrent shutdown, under/overvoltage lockout, and over-temperature monitoring</lie>
+      </ul>
+        
+        </div>
+
+
+
+      <section class="topic-section" aria-labelledby="explore-title"><h2 id="explore-title">Different PCB features</h2><div class="topic-grid"><a class="topic-card" href="../../../electrical/hardware/esc/motor-drive.html"><span class="topic-arrow" aria-hidden="true">↗</span><strong>Motor drive</strong><span>Inverter and motor interface</span></a><a class="topic-card" href="../../../electrical/hardware/esc/feedback.html"><span class="topic-arrow" aria-hidden="true">↗</span><strong>Sensing &amp; feedback</strong><span>Encoder and measurements</span></a><a class="topic-card" href="../../../electrical/hardware/esc/protection.html"><span class="topic-arrow" aria-hidden="true">↗</span><strong>Protection</strong><span>Fault handling and monitoring</span></a><a class="topic-card" href="../../../electrical/hardware/esc/communication.html"><span class="topic-arrow" aria-hidden="true">↗</span><strong>Communication</strong><span>Joint network interface</span></a></div></section>
+      <section class="topic-section">
+      <h2>Design Choices Overview</h2>
+      <p>Locating the ESC at the motor simplifies joint wiring and lets the controller sense a magnetic encoder at the input shaft. One general controller design can then be reused across the arm&#x27;s seven motors.</p>
+      <p>The board is being designed for field oriented control, magnetic position feedback, and protection against overcurrent, voltage faults, and excess temperature. Bring-up and testing are future milestones; performance is not yet characterized.</p>
+    
+    </section>
       <div class="note-box">This project is ongoing. Design goals, planned work, and measured results will be distinguished as the pages grow.</div>
       <div class="next-links"><h2>Continue exploring</h2><a href="../../../electrical/hardware/">← Electrical hardware</a><a href="../../../index.html">Project overview ↗</a></div>
     </main>
