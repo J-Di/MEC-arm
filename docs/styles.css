@@ -201,6 +201,14 @@ footer { border-top: 1px solid var(--line); background: var(--paper); padding: 2
 .doc-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
 .doc-figure figcaption { margin-top: 8px; color: var(--muted); font-size: 12px; }
 .doc-figure figcaption a { color: var(--red); }
+.esc-schematic a { display: block; }
+.esc-schematic img { cursor: zoom-in; }
+.esc-plain-list, .esc-detail-list { padding-left: 25px; }
+.esc-detail-list li { margin-bottom: 12px; }
+.esc-detail-list li p { margin: 3px 0 0; }
+.topic-section h3 { margin: 0 0 16px; font-size: 20px; line-height: 1.35; }
+.topic-section h4 { margin: 25px 0 10px; font-size: 17px; line-height: 1.4; }
+.topic-section a { overflow-wrap: anywhere; }
 .next-links { margin-top: 43px; padding-top: 20px; border-top: 1px solid var(--line); }
 .next-links h2 { margin-bottom: 12px; font-size: 18px; }
 .next-links a { display: inline-block; margin: 0 18px 10px 0; color: var(--red); font-size: 13px; font-weight: 650; text-decoration: none; }
