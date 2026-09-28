@@ -6005,12 +6005,6 @@
 		(uuid "922bef5b-7275-479c-9f3a-c84d77b96ff3")
 	)
 	(junction
-		(at 255.27 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "92a22ece-78da-409f-86ae-4a9dba04488f")
-	)
-	(junction
 		(at 265.43 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6085,6 +6079,10 @@
 	(no_connect
 		(at 48.26 161.29)
 		(uuid "36b80d00-2f2c-4196-aaa3-7f34e316acd8")
+	)
+	(no_connect
+		(at 260.35 39.37)
+		(uuid "4dbb1888-6721-4d65-b9d9-a700cc018e8c")
 	)
 	(no_connect
 		(at 260.35 49.53)
@@ -7386,16 +7384,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 116.84) (xy 255.27 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91218e40-805c-4d33-b702-a7e62f4fd6a3")
-	)
-	(wire
-		(pts
 			(xy 24.13 72.39) (xy 25.4 72.39)
 		)
 		(stroke
@@ -7606,7 +7594,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 116.84) (xy 283.21 116.84)
+			(xy 237.49 116.84) (xy 283.21 116.84)
 		)
 		(stroke
 			(width 0)
@@ -7746,16 +7734,6 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 87.63) (xy 255.27 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b685c142-6fcd-455f-9231-ac3518adade6")
-	)
-	(wire
-		(pts
 			(xy 186.69 166.37) (xy 186.69 172.72)
 		)
 		(stroke
@@ -7803,16 +7781,6 @@
 			(type default)
 		)
 		(uuid "c0c7ed6a-b837-4c49-9f04-f813c52fa653")
-	)
-	(wire
-		(pts
-			(xy 255.27 106.68) (xy 255.27 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c140ddef-0d75-4e28-8330-f0a38e8020f3")
 	)
 	(wire
 		(pts
@@ -8176,16 +8144,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 39.37) (xy 262.89 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e265f895-8dd4-4dcf-a600-4bf19c738f35")
-	)
-	(wire
-		(pts
 			(xy 260.35 46.99) (xy 274.32 46.99)
 		)
 		(stroke
@@ -8286,16 +8244,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 160.02) (xy 81.28 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1b33346-31c7-47fe-8dda-d160b2053d85")
-	)
-	(wire
-		(pts
 			(xy 38.1 81.28) (xy 38.1 83.82)
 		)
 		(stroke
@@ -8343,6 +8291,16 @@
 			(type default)
 		)
 		(uuid "f35ede06-7b80-48c0-9980-000e6fe3df2c")
+	)
+	(wire
+		(pts
+			(xy 81.28 158.75) (xy 81.28 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f42f1342-df04-4619-b2ea-bb4ef2bcfd54")
 	)
 	(wire
 		(pts
@@ -9884,16 +9842,6 @@
 		)
 		(uuid "81098d62-176a-43ad-8695-4264c5ea57db")
 	)
-	(label "MAG_Z"
-		(at 262.89 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8206bb42-e2d4-4d86-8a56-f6f3d17ce3db")
-	)
 	(label "USB_D_O_N"
 		(at 96.52 58.42 0)
 		(effects
@@ -9963,16 +9911,6 @@
 			(justify left bottom)
 		)
 		(uuid "a9840ba2-d0ad-4860-9eda-fdbb71d8809b")
-	)
-	(label "MAG_Z"
-		(at 255.27 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b869c891-a410-4cdb-8906-226282111e6a")
 	)
 	(label "GPIO_CTRL1"
 		(at 254 229.87 0)
@@ -11329,6 +11267,89 @@
 		)
 	)
 	(symbol
+		(lib_id "connector:SolderJumper_2_Open")
+		(at 240.03 93.98 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11a49a99-c862-48e1-a782-3021a0dae31c")
+		(property "Reference" "JP3"
+			(at 242.57 92.7099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 242.57 95.2499 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 240.03 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 245.11 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6f4776c1-6915-47a3-b8d4-a651acac950f")
+		)
+		(pin "1"
+			(uuid "b3597bdc-4a4b-499a-a150-2ea774bec618")
+		)
+		(instances
+			(project "mec-arm-esc"
+				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
+					(reference "JP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 275.59 100.33 180)
 		(unit 1)
@@ -11547,6 +11568,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 240.03 102.87 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "146662e3-e6ba-400a-9c82-f3e42ccb23f2")
+		(property "Reference" "R71"
+			(at 237.744 104.394 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1.8k"
+			(at 242.316 104.902 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "core:R_0603"
+			(at 241.808 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 240.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C286575"
+			(at 240.03 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e509bde5-a837-4887-944f-aa1d0c6cf4c2")
+		)
+		(pin "1"
+			(uuid "128b8cae-1fdd-42b2-8ae9-6ae32ed0fa4c")
+		)
+		(instances
+			(project "mec-arm-esc"
+				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
+					(reference "R71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 270.51 166.37 0)
 		(unit 1)
@@ -11634,7 +11747,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "185997e1-c320-406a-8aae-c5b04ad47d98")
 		(property "Reference" "J2"
 			(at 49.53 186.944 90)
@@ -11916,89 +12029,6 @@
 			(project "mec-arm-esc"
 				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "connector:SolderJumper_2_Open")
-		(at 240.03 93.98 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1b393db5-3da6-424b-8086-635c6e95d067")
-		(property "Reference" "JP4"
-			(at 242.57 92.7099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 242.57 95.2499 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 240.03 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 245.11 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ac83ab8e-48da-4a4f-8974-c544f7f53585")
-		)
-		(pin "1"
-			(uuid "a79dc46b-1bae-448d-89db-f1f208024a1a")
-		)
-		(instances
-			(project "mec-arm-esc"
-				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
-					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -12589,6 +12619,89 @@
 		)
 	)
 	(symbol
+		(lib_id "connector:SolderJumper_2_Open")
+		(at 247.65 93.98 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37bb50d4-ecc4-4d09-b6ae-5e12e6facd9d")
+		(property "Reference" "JP4"
+			(at 250.19 92.7099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 250.19 95.2499 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 247.65 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 252.73 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6f9ce8d1-6cef-42e6-8385-aeb01af6a46a")
+		)
+		(pin "1"
+			(uuid "c38e86ed-54fa-4731-9eea-b94b91d4eb0e")
+		)
+		(instances
+			(project "mec-arm-esc"
+				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
+					(reference "JP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 364.49 64.77 0)
 		(unit 1)
@@ -12870,7 +12983,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "43f0d67f-5e1d-4fa5-9007-48bd35c38e5b")
 		(property "Reference" "J4"
@@ -13850,6 +13963,98 @@
 			(project "mec-arm-esc"
 				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
 					(reference "DA2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 247.65 102.87 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5ade5871-218a-4365-826a-69bc37d15acd")
+		(property "Reference" "R70"
+			(at 245.364 104.394 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1.8k"
+			(at 249.936 104.902 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "core:R_0603"
+			(at 249.428 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 247.65 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C286575"
+			(at 247.65 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3bfd00ab-c56e-42cd-8deb-160455fc87e1")
+		)
+		(pin "1"
+			(uuid "a62f2b36-830d-455b-ad14-51e6aeb813e7")
+		)
+		(instances
+			(project "mec-arm-esc"
+				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
+					(reference "R70")
 					(unit 1)
 				)
 			)
@@ -15184,89 +15389,6 @@
 			(project "mec-arm-esc"
 				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "connector:SolderJumper_2_Open")
-		(at 255.27 93.98 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "70b7f9ca-e161-4166-8fbe-556fe5760397")
-		(property "Reference" "JP2"
-			(at 257.81 92.7099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 257.81 95.2499 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 255.27 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 262.89 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 260.35 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ee22e07d-16f3-4e76-8a12-05d966154742")
-		)
-		(pin "1"
-			(uuid "ec03db1d-c95f-4366-a387-09272e2e634c")
-		)
-		(instances
-			(project "mec-arm-esc"
-				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
-					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -17010,98 +17132,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 255.27 102.87 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "944fefa2-419c-4daa-ac9a-27459bcff753")
-		(property "Reference" "R72"
-			(at 252.984 104.394 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1.8k"
-			(at 257.556 104.902 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "core:R_0603"
-			(at 257.048 102.87 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 255.27 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C286575"
-			(at 255.27 102.87 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e0b3622d-4ccd-40fe-bc9d-1ef396f33d2b")
-		)
-		(pin "1"
-			(uuid "eff4b965-8d76-48b7-970f-7a65f0f8e3bb")
-		)
-		(instances
-			(project "mec-arm-esc"
-				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
-					(reference "R72")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 233.68 116.84 90)
 		(unit 1)
 		(body_style 1)
@@ -18838,98 +18868,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 240.03 102.87 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c0d49a9b-b144-4026-8060-8c29991a9017")
-		(property "Reference" "R70"
-			(at 237.744 104.394 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1.8k"
-			(at 242.316 104.902 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "core:R_0603"
-			(at 241.808 102.87 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 240.03 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 240.03 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C286575"
-			(at 240.03 102.87 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "59a7e16f-b64c-4fb0-b2eb-db267c126e26")
-		)
-		(pin "1"
-			(uuid "9434caf4-0ea6-469a-8c37-644f7d23d7a5")
-		)
-		(instances
-			(project "mec-arm-esc"
-				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
-					(reference "R70")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 186.69 195.58 0)
 		(unit 1)
@@ -19752,98 +19690,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 247.65 102.87 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ddc51237-82e7-472c-aa17-e332c8381236")
-		(property "Reference" "R71"
-			(at 245.364 104.394 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1.8k"
-			(at 249.936 104.902 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "core:R_0603"
-			(at 249.428 102.87 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 247.65 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C286575"
-			(at 247.65 102.87 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0cd1ba0a-6b41-4af4-8068-9e743e083524")
-		)
-		(pin "1"
-			(uuid "6c7fe416-0e78-47c7-b4dc-9c6f4e2764b2")
-		)
-		(instances
-			(project "mec-arm-esc"
-				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
-					(reference "R71")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "core:AS5047P-ATSM_C22459881")
 		(at 247.65 46.99 0)
 		(unit 1)
@@ -20423,6 +20269,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 81.28 158.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ef4c48f7-1b21-433b-b83c-3e7029361872")
+		(property "Reference" "#PWR064"
+			(at 81.28 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_ESC"
+			(at 75.946 157.226 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 81.28 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "04f316b3-198f-483b-aa11-3d9a74651d9c")
+		)
+		(instances
+			(project "mec-arm-esc"
+				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 110.49 109.22 90)
 		(unit 1)
@@ -20509,89 +20432,6 @@
 			(project "mec-arm-esc"
 				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
 					(reference "C42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "connector:SolderJumper_2_Open")
-		(at 247.65 93.98 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f10161e6-087f-4a51-999d-af3c539aac81")
-		(property "Reference" "JP3"
-			(at 250.19 92.7099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 250.19 95.2499 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 247.65 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 252.73 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "8f7824d9-481d-427d-9af4-864cf77a6336")
-		)
-		(pin "1"
-			(uuid "876e7554-8854-4916-ae1e-97d13e5270a9")
-		)
-		(instances
-			(project "mec-arm-esc"
-				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
-					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -20854,84 +20694,6 @@
 			(project "mec-arm-esc"
 				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
 					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 81.28 160.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f92b5696-98a3-4945-9e37-601008a49634")
-		(property "Reference" "#PWR092"
-			(at 81.28 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 81.28 154.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 81.28 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "66f22d46-402c-4b2f-a2d7-56ffab5e6b50")
-		)
-		(instances
-			(project "mec-arm-esc"
-				(path "/e8c42cac-0e93-4c5c-9b53-7b1f62cb177c/e7902643-4f0e-4c62-98f1-e9c44d2c03d3"
-					(reference "#PWR092")
 					(unit 1)
 				)
 			)
