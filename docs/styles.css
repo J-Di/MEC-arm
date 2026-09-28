@@ -197,6 +197,10 @@ footer { border-top: 1px solid var(--line); background: var(--paper); padding: 2
 .topic-card strong { margin: 3px 0 5px; font-size: 16px; }
 .topic-card span:last-child { color: var(--muted); font-size: 13px; }
 .note-box { margin: 30px 0; padding: 17px 20px; background: var(--gray-panel); color: #545b62; font-size: 13px; }
+.doc-figure { margin: 18px 0 30px; }
+.doc-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+.doc-figure figcaption { margin-top: 8px; color: var(--muted); font-size: 12px; }
+.doc-figure figcaption a { color: var(--red); }
 .next-links { margin-top: 43px; padding-top: 20px; border-top: 1px solid var(--line); }
 .next-links h2 { margin-bottom: 12px; font-size: 18px; }
 .next-links a { display: inline-block; margin: 0 18px 10px 0; color: var(--red); font-size: 13px; font-weight: 650; text-decoration: none; }

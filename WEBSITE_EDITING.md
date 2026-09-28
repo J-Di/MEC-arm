@@ -32,6 +32,21 @@ To add an image, place it in `docs/assets/` and use a relative path from the pag
 
 The four `<figure class="gallery-slide">` blocks in `docs/index.html` are the arm, ESC board, gearbox, and assembly slides. Place your photos in `docs/assets/`, then change each slide's `<img src="assets/gallery-placeholder.svg">` to its photo path (for example, `src="assets/arm.jpg"`). Update the image's `alt` text and the `<figcaption>` as well. The placeholder is reused for now; it is not a drawing of the actual arm. The previous/next arrows and four dots work without any changes to `gallery.js`.
 
+### Add the S-Curve algorithm diagram
+
+The page is `docs/electrical/firmware/s-curve.html`. Keep your editable `.drawio` file in `docs/assets/trajectory/` and export a separate SVG into the same folder for the website. SVG keeps text and lines sharp when readers zoom into a large diagram. Replace the "Detailed draw.io diagram coming soon" block on that page with:
+
+```html
+<figure class="doc-figure">
+  <a href="../../assets/trajectory/s-curve-algorithm.svg" target="_blank" rel="noopener noreferrer">
+    <img src="../../assets/trajectory/s-curve-algorithm.svg" alt="Diagram of the S-Curve trajectory planner" loading="lazy">
+  </a>
+  <figcaption><a href="../../assets/trajectory/s-curve-algorithm.svg" target="_blank" rel="noopener noreferrer">Open the full-size algorithm diagram ↗</a></figcaption>
+</figure>
+```
+
+The inline preview gives context while the full-size link lets readers zoom and pan through the details. If the exported SVG is very large, a PNG preview with the SVG as the full-size link also works.
+
 ## Add a new topic page
 
 Example: add a PWM page under the ESC.

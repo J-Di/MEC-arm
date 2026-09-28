@@ -14,6 +14,7 @@ const sitePages = [
   { id: "firmware", label: "Firmware", path: "electrical/firmware/", parent: "electrical" },
   { id: "firmware-foc", label: "FOC", path: "electrical/firmware/foc.html", parent: "firmware" },
   { id: "firmware-position", label: "Joint position control", path: "electrical/firmware/position.html", parent: "firmware" },
+  { id: "firmware-scurve", label: "Online S-Curve planner", path: "electrical/firmware/s-curve.html", parent: "firmware-position" },
   { id: "firmware-can", label: "CAN protocol", path: "electrical/firmware/can.html", parent: "firmware" },
   { id: "mechanical", label: "Mechanical", path: "mechanical/" },
   { id: "structure", label: "Arm structure", path: "mechanical/structure/", parent: "mechanical" },

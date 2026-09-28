@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Online S-Curve trajectory planner for motor position control.">
+  <title>Online S-Curve trajectory planner — MEC-Arm</title>
+  <link rel="icon" href="../../assets/MEC_Logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css?v=5">
+</head>
+<body class="docs-page" data-root="../../" data-page="firmware-scurve">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header"></header>
+  <div class="container docs-shell">
+    <aside class="docs-sidebar" id="docs-sidebar" aria-label="Project sections"></aside>
+    <main class="docs-content" id="main">
+      <nav class="breadcrumbs" id="breadcrumbs" aria-label="Breadcrumb"></nav>
+      <div class="docs-titlebar">
+        <p class="section-kicker">MEC-ARM / PROJECT DOCUMENTATION</p>
+        <span class="status-pill">Existing project</span>
+        <h1>Online S-Curve trajectory planner</h1>
+        <p class="docs-lead">Project source: <a href="https://github.com/J-Di/Robotics-Arm" target="_blank" rel="noopener noreferrer">Robotics-Arm ↗</a></p>
+      </div>
+
+      <section class="topic-section">
+        <p>The whole point here was to make a S-Curve generator for motors, to allow little vibrations, and an accurate position control scheme, to be fed to the ESCs which is to run on top of the PID that the ESCs use in tandem with FOC.</p>
+      </section>
+
+      <section class="topic-section">
+        <h2>Overview - Trajectory Control</h2>
+        <ul>
+          <li>Break down a <strong>desired position (the setpoint)</strong> into a series of intermediate positions</li>
+          <li>These intermediate positions will guide the motor in a controlled fashion to the setpoint</li>
+        </ul>
+      </section>
+
+      <section class="topic-section">
+        <h2>What we want:</h2>
+        <ul>
+          <li>Be able to change setpoints on the fly</li>
+          <li>A smooth transition to the setpoint</li>
+          <li>Control with both Velocity and Position</li>
+        </ul>
+      </section>
+
+      <section class="topic-section">
+        <h2>Overview - S Curve</h2>
+        <ul>
+          <li>S-Curve motion offers a smooth acceleration profile for a motor to reach the desired target</li>
+          <li>It is the result of taking a specific applied Jerk profile, and integrating back to achieve position</li>
+        </ul>
+      </section>
+
+      <section class="topic-section">
+        <h2>Why is this good</h2>
+        <ul>
+          <li>Very smooth control over the arm</li>
+          <li>Reduces electrical stress on the motor</li>
+          <li>Reduces mechanical vibrations</li>
+          <li>Prevents any discontinuities</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" aria-labelledby="simulation-title">
+        <h2 id="simulation-title">Simulation</h2>
+        <figure class="doc-figure">
+          <a href="../../assets/trajectory/sim_simple.png" target="_blank" rel="noopener noreferrer">
+            <img src="../../assets/trajectory/sim_simple.png" alt="S-Curve simulation showing position, velocity, acceleration, and jerk over time" width="2084" height="1492" loading="lazy">
+          </a>
+          <figcaption>Example from the <a href="https://github.com/J-Di/Robotics-Arm" target="_blank" rel="noopener noreferrer">Robotics-Arm repository</a>. Open the image for a full-size view.</figcaption>
+        </figure>
+      </section>
+
+      <section class="topic-section" aria-labelledby="algorithm-title">
+        <h2 id="algorithm-title">Algorithm diagram</h2>
+        <div class="note-box">Detailed draw.io diagram coming soon.</div>
+      </section>
+
+      <div class="next-links"><h2>Continue exploring</h2><a href="position.html">← Joint position control</a><a href="https://github.com/J-Di/Robotics-Arm" target="_blank" rel="noopener noreferrer">View the project source ↗</a></div>
+    </main>
+  </div>
+  <footer id="site-footer"></footer>
+  <script src="../../docs.js" defer></script>
+</body>
+</html>
