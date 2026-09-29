@@ -146,6 +146,32 @@ footer { border-top: 1px solid var(--line); background: var(--paper); padding: 2
 .hub-card small { margin-top: auto; color: var(--red); font-size: 11px; font-weight: 700; }
 .availability-label { display: inline-block; align-self: flex-start; margin: 1px 0 10px; padding: 3px 8px; border: 1px solid #d7dadd; background: #f4f5f6; color: #4d555d; font-size: 11px; font-weight: 700; line-height: 1.4; }
 
+/* Team invitation and contact page */
+.team-teaser { padding: 34px 0 41px; }
+.team-teaser-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.team-teaser h2 { margin: 0 0 5px; font-size: 24px; letter-spacing: -.02em; }
+.team-teaser p { margin: 0; color: var(--muted); font-size: 13px; }
+.team-teaser-link { flex: none; padding: 10px 14px; border: 1px solid var(--line); color: var(--red); font-size: 13px; font-weight: 700; text-decoration: none; }
+.team-teaser-link:hover { border-color: var(--red); }
+.team-teaser-link span { margin-left: 8px; }
+.team-page { max-width: 900px; min-height: 70vh; padding-top: 36px; padding-bottom: 90px; }
+.team-back { color: var(--red); font-size: 13px; font-weight: 650; text-decoration: none; }
+.team-back:hover, .team-member a:hover { text-decoration: underline; }
+.team-page-heading { margin: 42px 0 38px; padding-bottom: 25px; border-bottom: 1px solid var(--line); }
+.team-page-heading h1 { margin: 0 0 9px; font-size: clamp(30px, 4vw, 40px); line-height: 1.2; letter-spacing: -.03em; }
+.team-page-heading > p:last-child { margin: 0; color: var(--muted); }
+.team-members { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 35px; }
+.team-member { min-width: 0; padding-top: 18px; border-top: 2px solid var(--red); }
+.team-member h2 { margin: 0 0 20px; font-size: 20px; line-height: 1.35; }
+.team-member dl { margin: 0; }
+.team-member dl > div { display: grid; grid-template-columns: 82px minmax(0, 1fr); gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.team-member dt { color: var(--muted); }
+.team-member dd { min-width: 0; margin: 0; overflow-wrap: anywhere; }
+.team-member a { color: var(--red); }
+.team-contact { margin-top: 43px; padding-top: 22px; border-top: 1px solid var(--line); }
+.team-contact h2 { margin: 0 0 7px; font-size: 22px; }
+.team-contact p { margin: 0; color: var(--muted); }
+
 /* Documentation pages */
 .docs-shell {
   display: grid;
@@ -283,6 +309,10 @@ footer { border-top: 1px solid var(--line); background: var(--paper); padding: 2
   .status-group::before { top: 10px; bottom: -10px; left: 9px; right: auto; width: 2px; height: auto; }
   .hub-grid, .topic-grid { grid-template-columns: 1fr; }
   .hub-card { min-height: 140px; }
+  .team-teaser-inner { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .team-members { grid-template-columns: 1fr; gap: 27px; }
+  .team-page { padding-top: 23px; padding-bottom: 55px; }
+  .team-page-heading { margin-top: 28px; }
   .docs-shell { display: flex; flex-direction: column; gap: 22px; padding-top: 18px; }
   .docs-sidebar { position: static; max-height: none; padding: 0 0 17px; border-right: 0; border-bottom: 1px solid var(--line); }
   .esc-page-nav { top: 104px; gap: 16px; overflow-x: auto; margin-top: -7px; }
