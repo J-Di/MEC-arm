@@ -209,6 +209,44 @@ footer { border-top: 1px solid var(--line); background: var(--paper); padding: 2
 .topic-section h3 { margin: 0 0 16px; font-size: 20px; line-height: 1.35; }
 .topic-section h4 { margin: 25px 0 10px; font-size: 17px; line-height: 1.4; }
 .topic-section a { overflow-wrap: anywhere; }
+/* ESC documentation: a persistent route back and a quieter reading layout. */
+.esc-page-nav {
+  position: sticky;
+  top: 68px;
+  z-index: 4;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin: -13px 0 27px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, .97);
+  backdrop-filter: blur(10px);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.esc-page-nav a { color: #555c64; text-decoration: none; }
+.esc-page-nav a:hover { color: var(--red); }
+.esc-page-nav .esc-return { margin-right: auto; color: var(--red); font-weight: 750; }
+.esc-article > h2 { margin: 0 0 10px; font-size: 21px; letter-spacing: -.015em; }
+.esc-article .topic-section { margin: 0 0 38px; padding-top: 26px; border-top: 1px solid var(--line); scroll-margin-top: 140px; }
+.esc-article .topic-section h3 { margin-bottom: 18px; font-size: 22px; letter-spacing: -.015em; }
+.esc-article .topic-section h4 { margin-top: 29px; color: #34383e; }
+.esc-article .topic-section p, .esc-article .topic-section li { color: #353b42; line-height: 1.78; }
+.esc-article .topic-section p { margin-bottom: 18px; }
+.esc-article .topic-section li::marker { color: var(--red); }
+.esc-article .esc-detail-list { margin: 18px 0 22px; }
+.esc-article .esc-detail-list li { padding-left: 4px; margin-bottom: 14px; }
+.esc-article .esc-detail-list li p { margin: 3px 0 0; }
+.esc-article .esc-schematic { margin: 10px 0 25px; padding: 10px; border: 1px solid var(--line); background: #f7f8f8; }
+.esc-article .esc-schematic img { border: 0; }
+.esc-resources { margin-top: 42px; padding-top: 27px; border-top: 1px solid var(--line); }
+.esc-resources h2 { margin-bottom: 21px; }
+.esc-resource { padding: 14px 0 16px; border-top: 1px solid #e8eaec; }
+.esc-resource h3 { margin: 0 0 8px; font-size: 16px; }
+.esc-resource p { margin: 0 0 10px; font-size: 13px; }
+.esc-resource p:last-child { margin-bottom: 0; }
+.esc-resource a { color: #8f2330; overflow-wrap: anywhere; text-underline-offset: 2px; }
 .next-links { margin-top: 43px; padding-top: 20px; border-top: 1px solid var(--line); }
 .next-links h2 { margin-bottom: 12px; font-size: 18px; }
 .next-links a { display: inline-block; margin: 0 18px 10px 0; color: var(--red); font-size: 13px; font-weight: 650; text-decoration: none; }
@@ -237,6 +275,9 @@ footer { border-top: 1px solid var(--line); background: var(--paper); padding: 2
   .hub-card { min-height: 140px; }
   .docs-shell { display: flex; flex-direction: column; gap: 22px; padding-top: 18px; }
   .docs-sidebar { position: static; max-height: none; padding: 0 0 17px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .esc-page-nav { top: 104px; gap: 16px; overflow-x: auto; margin-top: -7px; }
+  .esc-page-nav .esc-return { position: sticky; left: 0; flex: none; padding-right: 10px; background: var(--white); }
+  .esc-article .topic-section { scroll-margin-top: 160px; }
   .side-tree { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
   .side-link.depth-0 { margin: 0; }
   .breadcrumbs { margin: 0 0 21px; }
