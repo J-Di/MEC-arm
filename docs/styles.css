@@ -188,6 +188,11 @@ footer { border-top: 1px solid var(--line); background: var(--paper); padding: 2
 .topic-section { margin: 32px 0; }
 .topic-section h2 { margin: 0 0 12px; font-size: 22px; line-height: 1.35; letter-spacing: -.015em; }
 .topic-section p, .topic-section li { color: #4f565e; }
+.esc-overview-list { margin: 27px 0; }
+.esc-overview-list + .esc-overview-list { padding-top: 24px; border-top: 1px solid var(--line); }
+.esc-overview-list ul { margin: 0; padding-left: 23px; }
+.esc-overview-list li { padding: 2px 0; color: #353b42; }
+.esc-overview-list li::marker { color: var(--red); }
 .topic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 20px 0 35px; }
 .topic-card { display: flex; flex-direction: column; min-height: 132px; padding: 17px; border: 1px solid var(--line); text-decoration: none; }
 .topic-card-image {

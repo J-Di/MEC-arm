@@ -6,7 +6,7 @@
   <meta name="description" content="A compact brushless motor controller intended to live behind each joint motor and support smooth low speed position control.">
   <title>Joint ESC — MEC-Arm</title>
   <link rel="icon" href="../../../assets/MEC_Logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../styles.css?v=4">
+  <link rel="stylesheet" href="../../../styles.css?v=5">
 </head>
 <body class="docs-page" data-root="../../../" data-page="esc">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -22,21 +22,30 @@
            and this eliminates the nasty wiring which comes with externally mounted ESCs. The decision to use brushless motors was made so that we can extract as much torque as possible in a very small volume, and so we can take advantage of interesting 
            control strategies such as FOC.          
           </p>
-        
-          <p> High Level Goals: </p>
-
-      <ul>
-        <li>Compact driver must fit behind motor for each joint</li>
-        <li>Must be able to run FOC</li>
-        <li>Achieve smooth low speed position control with magnetic encoder feedback</li>
-        <li>Generic use across all arm joints</li>
-        <li>Protected against overcurrent shutdown, under/overvoltage lockout, and over-temperature monitoring</li>
-      </ul>
-        
-        </div>
-
-
-
+      </div>
+      <section class="topic-section esc-overview-list" aria-labelledby="esc-goals-title">
+        <h2 id="esc-goals-title">High Level Goals:</h2>
+        <ul>
+          <li>Compact driver must fit behind motor for each joint</li>
+          <li>Must be able to run FOC</li>
+          <li>Achieve smooth low speed position control with magnetic encoder feedback</li>
+          <li>Generic use across all arm joints</li>
+          <li>Protected against overcurrent shutdown, under/overvoltage lockout, and over-temperature monitoring</li>
+        </ul>
+      </section>
+      <section class="topic-section esc-overview-list" aria-labelledby="esc-specifications-title">
+        <h2 id="esc-specifications-title">ESC Specifications</h2>
+        <ul>
+          <li>22A Max Continuous</li>
+          <li>Designed for 6S LiPo battery pack or equivalent DC Supply (25.2V -18V)</li>
+          <li>3-phase driver board for BLDC motors</li>
+          <li>3-shunt mode supported for motor current sensing</li>
+          <li>CAN, USB, and UART for communication</li>
+          <li>Internal encoder (supports external motor sensors)</li>
+          <li>Small profile, intended to be mounted behind motors (60mm x 60mm)</li>
+          <li>STM32G474RE MCU with Arm Cortex-M4 MCU 170 MHz with 512 Kbytes of Flash memory, Math Accelerator, HR Timer, High Analog level integration</li>
+        </ul>
+      </section>
       <section class="topic-section" aria-labelledby="explore-title"><h2 id="explore-title">Different PCB features</h2><div class="topic-grid">
         <a class="topic-card" href="powerstage.html"><span class="topic-arrow" aria-hidden="true">↗</span><strong>Powerstage</strong><span>Input power, converters, and inverter</span></a>
         <a class="topic-card" href="peripherals.html"><span class="topic-arrow" aria-hidden="true">↗</span><strong>Peripherals</strong><span>Documentation coming soon</span></a>
