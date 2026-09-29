@@ -44,7 +44,7 @@ for (let node = pageMap.get(currentId); node; node = pageMap.get(node.parent)) c
 
 document.getElementById("site-header").innerHTML = `<div class="container nav-wrap">
   <a class="brand" href="${href('index.html')}" aria-label="MEC-Arm home"><img class="brand-logo" src="${href('assets/MEC_Logo.svg?v=3')}" alt="" width="38" height="50"></a>
-  <nav aria-label="Main navigation"><a href="${href('index.html')}">Overview</a><a href="${href('electrical/')}">Electrical</a><a href="${href('mechanical/')}">Mechanical</a><a href="${href('software/')}">Software</a></nav>
+  <nav aria-label="Main navigation"><a href="${href('index.html')}">Home</a><a href="${href('electrical/')}">Electrical</a><a href="${href('mechanical/')}">Mechanical</a><a href="${href('software/')}">Software</a><a href="${href('team/')}">The Team</a></nav>
   <a class="nav-github" id="repo-nav" href="#repository">GitHub ↗</a></div>`;
 
 function renderTree(parent, depth = 0) {
