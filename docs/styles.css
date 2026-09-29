@@ -144,6 +144,7 @@ footer { border-top: 1px solid var(--line); background: var(--paper); padding: 2
 .hub-card h3 span { color: var(--red); font-weight: 500; }
 .hub-card p { margin-bottom: 14px; color: var(--muted); font-size: 13px; }
 .hub-card small { margin-top: auto; color: var(--red); font-size: 11px; font-weight: 700; }
+.availability-label { display: inline-block; align-self: flex-start; margin: 1px 0 10px; padding: 3px 8px; border: 1px solid #d7dadd; background: #f4f5f6; color: #4d555d; font-size: 11px; font-weight: 700; line-height: 1.4; }
 
 /* Documentation pages */
 .docs-shell {
