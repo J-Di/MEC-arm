@@ -114,12 +114,18 @@ int main(void)
   MX_CORDIC_Init();
   /* USER CODE BEGIN 2 */
 
+  // Gate driver stays asleep
+  HAL_GPIO_WritePin(DRV_ENABLE_GPIO_Port, DRV_ENABLE_Pin, GPIO_PIN_RESET);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+    HAL_GPIO_TogglePin(LED_DEBUG1_GPIO_Port, LED_DEBUG1_Pin);
+    HAL_Delay(250);   // 2 Hz blink
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -200,6 +206,14 @@ void SystemClock_Config(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
+
+  // Disable the gate driver
+    HAL_GPIO_WritePin(DRV_ENABLE_GPIO_Port, DRV_ENABLE_Pin, GPIO_PIN_RESET);
+
+  // Solid LED for debug
+  HAL_GPIO_WritePin(LED_DEBUG1_GPIO_Port, LED_DEBUG1_Pin, GPIO_PIN_SET);  // solid on = error
+
+
   /* User can add his own implementation to report the HAL error return state */
   __disable_irq();
   while (1)

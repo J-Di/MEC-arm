@@ -52,11 +52,11 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, LAZER_EN_Pin|FAN_EN_Pin|LED_DEBUG1_Pin|GPIO_SPARE1_Pin
-                          |GPIO_SPARE2_Pin|GPIO_SPARE3_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, LAZER_EN_Pin|FAN_EN_Pin|GPIO_SPARE1_Pin|GPIO_SPARE2_Pin
+                          |GPIO_SPARE3_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LED_DEBUG2_GPIO_Port, LED_DEBUG2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LED_DEBUG1_GPIO_Port, LED_DEBUG1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(ENC_CS_GPIO_Port, ENC_CS_Pin, GPIO_PIN_SET);
@@ -67,10 +67,10 @@ void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(DRV_ENABLE_GPIO_Port, DRV_ENABLE_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : LAZER_EN_Pin FAN_EN_Pin LED_DEBUG1_Pin GPIO_SPARE1_Pin
-                           GPIO_SPARE2_Pin GPIO_SPARE3_Pin */
-  GPIO_InitStruct.Pin = LAZER_EN_Pin|FAN_EN_Pin|LED_DEBUG1_Pin|GPIO_SPARE1_Pin
-                          |GPIO_SPARE2_Pin|GPIO_SPARE3_Pin;
+  /*Configure GPIO pins : LAZER_EN_Pin FAN_EN_Pin GPIO_SPARE1_Pin GPIO_SPARE2_Pin
+                           GPIO_SPARE3_Pin */
+  GPIO_InitStruct.Pin = LAZER_EN_Pin|FAN_EN_Pin|GPIO_SPARE1_Pin|GPIO_SPARE2_Pin
+                          |GPIO_SPARE3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -82,12 +82,12 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(USB_VBUS_SENSE_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : LED_DEBUG2_Pin */
-  GPIO_InitStruct.Pin = LED_DEBUG2_Pin;
+  /*Configure GPIO pin : LED_DEBUG1_Pin */
+  GPIO_InitStruct.Pin = LED_DEBUG1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(LED_DEBUG2_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(LED_DEBUG1_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : ENC_CS_Pin */
   GPIO_InitStruct.Pin = ENC_CS_Pin;
